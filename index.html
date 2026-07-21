@@ -3,87 +3,403 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UniLink - Transforme conhecimento em oportunidades</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <!-- <i class='bx bxs-layer'></i> -->
+                </div>
+                <span>UniLink</span>
+            </div>
+            <ul class="nav-links">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="/">Encontrar Professores</a></li>
+                <li><a href="#">Empresas</a></li>
+                <li><a href="#">Como Funciona</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-login">
+                    <i class='bx bx-log-in' style='color:#0e0e0e' ></i>
+                    Login
+                </button>
+                <button class="btn-register">Cadastre-se</button>
+            </div>
+        </nav>
+    </header>
     <main>
         <section class="hero">
-            <div>
-                <h1>Transforme conhecimento em <span style="color:rgb(0, 157, 255)">Oportunidades.</span></h1>
+            <div class="hero-left">
+                <h1>
+                    Transforme <br> conhecimento em <br> <span>oportunidades.</span>
+                </h1>
+                <p>
+                    O UniLink conecta universitários a alunos e empresas, gerando renda, experiência profissional e acesso à educação de qualidade.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="hero-btn hero-btn-primary">
+                        <i class='bx bx-search-alt'></i>
+                        Encontrar Professor
+                    </a>
+                    <a href="#" class="hero-btn hero-btn-secondary">
+                        <i class='bx bxs-graduation' ></i>
+                        Quero Ensinar
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="icon blue">
+                            <i class='bx bxs-group' ></i>
+                        </div>
+                        <div>
+                            <h3>+8.000</h3>
+                            <p>Professores</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="icon green">
+                            <i class='bx bxs-book-open' ></i>
+                        </div>
+                        <div>
+                            <h3>+3.500</h3>
+                            <p>Aulas realizadas</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="icon orange">
+                            <i class='bx bxs-buildings' ></i>
+                        </div>
+                        <div>
+                            <h3>+500</h3>
+                            <p>Empresas parceiras</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>O UniLink conecta universitários a alunos e empresas, gerando renda, experiência profissional e acesso à educação de qualidade.Encontrar Professor</p>
-            </div>
-            <div>
-                <button>
-                    Encontrar Professor
-                </button>
-                <button>
-                    Quero Ensinar
-                </button>
+            <div class="hero-right">
+                <img src="img/student.jpg">
+                <div class="hero-card rating">
+                    <small>Avaliação dos alunos</small>
+                    <i class='bx bxs-star' ></i>
+                    <span>Baseado em 320 avaliações</span>
+                </div>
+                <div class="hero-card price">
+                    <small>Valor por hora</small>
+                    <h3>R$ 60,00</h3>
+                    <span>Preço médio</span>
+                </div>
+                <div class="hero-card university-card">
+                    <div class="badge">USP</div>
+                    <div>
+                        <small>Universidade</small>
+                        <strong>USP</strong>
+                        <span>Universidade de São Paulo</span>
+                    </div>
+                </div>
+                <div class="hero-card subject">
+                    <div class="badge blue">
+                        <i class='bx bx-book-open' ></i>
+                    </div>
+                    <div>
+                        <small>Disciplina</small>
+                        <strong>Cálculo I</strong>
+                        <span>Ensino Superior</span>
+                    </div>
+                </div>
+                <div class="hero-card lesson">
+                    <div class="badge green">
+                        <i class='bx bxs-calendar' ></i>
+                    </div>
+                    <div>
+                        <small>Próxima aula</small>
+                        <strong>Hoje, 19:00</strong>
+                        <span>Aula online</span>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="steps">
-            <div>
-                <h2>Como Funciona</h2>
-            </div>
-            <div>
-                <p>É simples, rápido e feito para você.</p>
-            </div>
-            <div class="conteiner">
+            <h2>Como funciona</h2>
+            <p class="subtitle">É simples, rápido e feito para você.</p>
+            <div class="container">
                 <div class="explain">
-                    <h3>Cadastre-se</h3>
-                    <p>Crie sua conta gratuitamente como aluno, professor ou empresa.</p>
+                    <div class="icon blue">
+                        <i class='bx bx-user-plus'></i>
+                        <span>1</span>
+                    </div>
+                    <div class="content">
+                        <h3>Cadastre-se</h3>
+                        <p>Crie sua conta gratuitamente como aluno, professor ou empresa.</p>
+                    </div>
+                    <i class='bx bx-right-arrow-alt arrow'></i>
                 </div>
                 <div class="explain">
-                    <h3>Encontre ou ofereça serviços</h3>
-                    <p>Busque professores ou encontre oportunidades de projetos e freelances.</p>
+                    <div class="icon green">
+                        <i class='bx bx-search'></i>
+                        <span>2</span>
+                    </div>
+                    <div class="content">
+                        <h3>Encontre ou ofereça serviços</h3>
+                        <p>Busque professores ou encontre oportunidades de projetos e freelances.</p>
+                    </div>
+                    <i class='bx bx-right-arrow-alt arrow'></i>
                 </div>
                 <div class="explain">
-                    <h3>Agende sua aula</h3>
-                    <p>Combine horários, realize aulas online ou presenciais e alcance seus objetivos.</p>
+                    <div class="icon orange">
+                        <i class='bx bx-calendar'></i>
+                        <span>3</span>
+                    </div>
+                    <div class="content">
+                        <h3>Agende sua aula</h3>
+                        <p>Combine horários, realize aulas online ou presenciais.</p>
+                    </div>
+                    <i class='bx bx-right-arrow-alt arrow'></i>
                 </div>
             </div>
         </section>
         <section class="explore">
-            <div>
-                <h2>Explore nossas categorias</h2>
-            </div>
+            <h2>Explore nossas categorias</h2>
             <div class="categories">
                 <div class="item-cat">
-                    <p>Matematica</p>
+                    <i class='bx bx-calculator'></i>
+                    <span>Matemática</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bx-atom'></i>
+                    <span>Física</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bxs-flask'></i>
+                    <span>Química</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bx-dna'></i>
+                    <span>Biologia</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bx-text'></i>
+                    <span>Português</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bx-book'></i>
+                    <span>Inglês</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bx-code-alt'></i>
+                    <span>Programação</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bxs-balance'></i>
+                    <span>Direito</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bx-briefcase'></i>
+                    <span>Administração</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bx-wrench'></i>
+                    <span>Engenharia</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bx-music'></i>
+                    <span>Música</span>
+                </div>
+                <div class="item-cat">
+                    <i class='bx bx-world'></i>
+                    <span>Idiomas</span>
                 </div>
             </div>
         </section>
         <section class="teachers-contrast">
-            <div>
+            <div class="teachers-header">
                 <h2>Professores em destaque</h2>
-            </div>
-            <div>
-                <p>Ver todos</p>
+                <a href="#">Ver todos</a>
             </div>
             <div class="teachers">
                 <div class="card-teachers">
-                    <p style="color:rgb(0, 157, 255)">USP</p>
-                    <h3>Mariana Oliveira</h3>
-                    <p>Engenheira civil</p>
-                    <div class="rating">
-                        <p>4.9 (128)</p>
+                    <img src="img/teacher-1.jpg" alt="Mariana Oliveira">
+                    <div class="card-content">
+                        <span class="university">USP</span>
+                        <h3>Mariana Oliveira</h3>
+                        <p class="course">Engenharia Civil</p>
+                        <div class="info">
+                            <span>⭐ 4.9 (128)</span>
+                            <strong>R$ 70/h</strong>
+                        </div>
+                        <span class="status online">Online</span>
+                        <button>Ver Perfil</button>
                     </div>
-                    <p>R$ 70/h</p>
-                    <div class="status">
-                        <p style="color: rgb(0, 219, 0)">Online</p>
+                </div>
+                <div class="card-teachers">
+                    <img src="img/teacher-2.jpg" alt="João Pedro">
+                    <div class="card-content">
+                        <span class="university">UNICAMP</span>
+                        <h3>João Pedro Lima</h3>
+                        <p class="course">Ciência da Computação</p>
+                        <div class="info">
+                            <span>⭐ 4.8 (95)</span>
+                            <strong>R$ 65/h</strong>
+                        </div>
+                        <span class="status online">Online</span>
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="card-teachers">
+                    <img src="img/teacher-3.jpg" alt="Beatriz Santos">
+                    <div class="card-content">
+                        <span class="university">UFRJ</span>
+                        <h3>Beatriz Santos</h3>
+                        <p class="course">Biologia</p>
+                        <div class="info">
+                            <span>⭐ 4.9 (110)</span>
+                            <strong>R$ 60/h</strong>
+                        </div>
+                        <span class="status presencial">Presencial</span>
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="card-teachers">
+                    <img src="img/teacher-4.jpg" alt="Lucas Almeida">
+                    <div class="card-content">
+                        <span class="university">FGV</span>
+                        <h3>Lucas Almeida</h3>
+                        <p class="course">Administração</p>
+                        <div class="info">
+                            <span>⭐ 4.7 (88)</span>
+                            <strong>R$ 55/h</strong>
+                        </div>
+                        <span class="status online">Online</span>
+                        <button>Ver Perfil</button>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="recruitment">
+            <div class="recruitment-container">
+                <div class="recruitment-preview">
+                    <article class="job-card">
+                        <div class="job-header">
+                            <div class="company-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <span class="company-name">innovate</span>
+                                <p>A Innovate está contratando</p>
+                            </div>
+                        </div>
+                        <h3>Desenvolvedor Front-end</h3>
+                        <div class="job-tags">
+                            <span>Projeto Freelance</span>
+                            <span>Remoto</span>
+                            <span>R$ 3.000 - 5.000</span>
+                        </div>
+                        <p class="technologies">
+                            Tecnologias: React, TypeScript, Tailwind CSS
+                        </p>
+                        <p class="deadline">
+                            <i class="fa-regular fa-clock"></i>
+                            Prazo: 30 dias
+                        </p>
+                        <a href="#" class="details-btn">
+                            Ver detalhes da oportunidade
+                        </a>
+                    </article>
+                    <img src="img/companies-meeting.jpg" alt="Equipe da empresa">
+                </div>
+                <div class="recruitment-content">
+                    <h2>
+                        Empresas encontram <br> talentos universitários
+                    </h2>
+                    <p>
+                        Publique oportunidades de projetos, estágios ou freelances e encontre os melhores talentos para impulsionar seus resultados.
+                    </p>
+                    <a href="#" class="publish-btn">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        Publicar oportunidade
+                    </a>
+                </div>
+            </div>
+        </section>
         <section class="cta">
-            <h2>Pronto para transformar <br> conhecimento em oportunidades?</h2>
-            <p>Junte-se a milhares de universitários que já estão ensinando, aprendendo e construindo o futuro com o UniLink.</p>
-            <button>Encontrar Professor</button>
-            <button>Cadastrar como Professor</button>
+            <div class="cta-content">
+                <h2>
+                    Pronto para transformar <br> conhecimento em oportunidades?
+                </h2>
+                <p>
+                    Junte-se a milhares de universitários que já estão ensinando, aprendendo e construindo o futuro com o UniLink.
+                </p>
+            </div>
+            <div class="cta-actions">
+                <button class="filled">
+                    <i class='bx bx-search-alt'></i>
+                    Encontrar Professor
+                </button>
+                <button class="outline">
+                    <i class='bx bxs-graduation'></i>
+                    Cadastrar como Professor
+                </button>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <span>UniLink</span>
+                    </a>
+                    <p>
+                        Conectando universitários, alunos e empresas para um futuro com mais conhecimento e oportunidades.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <a href="#">Home</a>
+                    <a href="#">Encontrar Professores</a>
+                    <a href="#">Empresas</a>
+                    <a href="#">Como Funciona</a>
+                    <a href="#">Sobre</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Para usuários</h4>
+                    <a href="#">Cadastrar-se</a>
+                    <a href="#">Login</a>
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Perguntas Frequentes</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Para empresas</h4>
+                    <a href="#">Publicar oportunidade</a>
+                    <a href="#">Planos e preços</a>
+                    <a href="#">Como contratar</a>
+                    <a href="#">Fale com vendas</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 UniLink. Todos os direitos reservados.
+                </p>
+                <p>
+                    Feito com
+                    <i class="fa-solid fa-heart"></i>
+                    para transformar vidas através da educação.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
