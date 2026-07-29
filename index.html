@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar">
             <div class="logo">
                 <div class="logo-icon">
@@ -17,14 +17,14 @@
                 <span>UniLink</span>
             </div>
             <ul class="nav-links">
-                <li><a class="active" href="#">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="/">Encontrar Professores</a></li>
-                <li><a href="#">Empresas</a></li>
+                <li><a href="empresas.html">Empresas</a></li>
                 <li><a href="#">Como Funciona</a></li>
                 <li><a href="#">Sobre</a></li>
             </ul>
             <div class="nav-buttons">
-                <button class="btn-login">
+                <button class="btn-login" onclick="window.location.href='login.html'">
                     <i class='bx bx-log-in' style='color:#0e0e0e' ></i>
                     Login
                 </button>
@@ -85,7 +85,7 @@
                 <img src="img/student.jpg">
                 <div class="hero-card rating">
                     <small>Avaliação dos alunos</small>
-                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' style="color: #FFC107" ></i> 4,8
                     <span>Baseado em 320 avaliações</span>
                 </div>
                 <div class="hero-card price">
@@ -360,24 +360,24 @@
                         Conectando universitários, alunos e empresas para um futuro com mais conhecimento e oportunidades.
                     </p>
                     <div class="footer-social">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
                     <h4>Navegação</h4>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="#">Encontrar Professores</a>
-                    <a href="#">Empresas</a>
+                    <a href="empresas.html">Empresas</a>
                     <a href="#">Como Funciona</a>
                     <a href="#">Sobre</a>
                 </div>
                 <div class="footer-links">
                     <h4>Para usuários</h4>
                     <a href="#">Cadastrar-se</a>
-                    <a href="#">Login</a>
+                    <a href="login.html">Login</a>
                     <a href="#">Central de Ajuda</a>
                     <a href="#">Perguntas Frequentes</a>
                 </div>
@@ -395,11 +395,12 @@
                 </p>
                 <p>
                     Feito com
-                    <i class="fa-solid fa-heart"></i>
+                    <i class='bx bx-heart'></i>
                     para transformar vidas através da educação.
                 </p>
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

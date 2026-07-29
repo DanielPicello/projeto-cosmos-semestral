@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - UniLink</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <!-- <i class='bx bxs-layer'></i> -->
+                </div>
+                <span>UniLink</span>
+            </div>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="/">Encontrar Professores</a></li>
+                <li><a href="empresas.html">Empresas</a></li>
+                <li><a href="#">Como Funciona</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">
+                    <i class='bx bx-log-in' style='color:#0e0e0e' ></i>
+                    Login
+                </button>
+                <button class="btn-register">Cadastre-se</button>
+            </div>
+        </nav>
+    </header>
+    <main class="register-page">
+        <div class="register-container">
+            <div class="register-steps">
+                <div class="register-step active">
+                    <div class="register-step-circle">1</div>
+                    <span>Tipo de conta</span>
+                </div>
+                <div class="register-line"></div>
+                <div class="register-step">
+                    <div class="register-step-circle">2</div>
+                    <span>Dados básicos</span>
+                </div>
+                <div class="register-line"></div>
+                <div class="register-step">
+                    <div class="register-step-circle">3</div>
+                    <span>Perfil</span>
+                </div>
+            </div>
+            <div class="register-card">
+                <h1 class="register-title">Quem é você?</h1>
+                <p class="register-subtitle">
+                    Escolha o tipo de conta para começar.
+                </p>
+                <div class="register-options">
+                        <div class="register-option selected" data-type="student">
+                            <div class="register-icon">
+                                <i class='bx bx-book-open'></i>
+                            </div>
+                            <h3>Sou Aluno</h3>
+                            <p>Quero encontrar professores para aulas particulares.</p>
+                        </div>
+                        <div class="register-option" data-type="teacher">
+                            <div class="register-icon">
+                                <i class='bx bxs-graduation'></i>
+                            </div>
+                            <h3>Sou Professor</h3>
+                            <p>
+                                Sou universitário e quero ensinar para ganhar uma renda extra.
+                            </p>
+                        </div>
+                        <div class="register-option" data-type="company">
+                            <div class="register-icon">
+                                <i class='bx bx-buildings'></i>
+                            </div>
+                            <h3>Sou Empresa</h3>
+                            <p>
+                                Quero contratar talentos universitários para minha empresa.
+                            </p>
+                        </div>
+                </div>
+                <div class="register-footer">
+                    <button class="register-button" disabled>
+                        Continuar
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                </div>
+            </div>
+            <p class="register-login">
+                Já tem uma conta?
+                <a href="#">Faça login</a>
+            </p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <span>UniLink</span>
+                    </a>
+                    <p>
+                        Conectando universitários, alunos e empresas para um futuro com mais conhecimento e oportunidades.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <a href="index.html">Home</a>
+                    <a href="#">Encontrar Professores</a>
+                    <a href="empresas.html">Empresas</a>
+                    <a href="#">Como Funciona</a>
+                    <a href="#">Sobre</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Para usuários</h4>
+                    <a href="#">Cadastrar-se</a>
+                    <a href="login.html">Login</a>
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Perguntas Frequentes</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Para empresas</h4>
+                    <a href="#">Publicar oportunidade</a>
+                    <a href="#">Planos e preços</a>
+                    <a href="#">Como contratar</a>
+                    <a href="#">Fale com vendas</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 UniLink. Todos os direitos reservados.
+                </p>
+                <p>
+                    Feito com
+                    <i class='bx bx-heart'></i>
+                    para transformar vidas através da educação.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
