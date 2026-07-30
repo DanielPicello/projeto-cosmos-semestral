@@ -1,5 +1,6 @@
+
 .hero-professores{
-    background:#EEF5FF;
+    background:#f5f9ff;
     padding:70px 0;
 }
 
@@ -9,9 +10,17 @@
     margin:auto;
 }
 
+.hero-professores .container{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
 .hero-professores h1{
     font-size:52px;
     margin-bottom:15px;
+    margin-top: 20px;
 }
 
 .hero-professores p{
@@ -150,6 +159,17 @@
     display: inline-block;
     background-color: #DCFCE7;
     color: #16A34A;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.presencial {
+     display: inline-block;
+    background-color: #DBEAFE;
+    color: #2563EB;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 14px;

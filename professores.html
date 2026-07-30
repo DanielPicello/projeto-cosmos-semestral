@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professores</title>
+    
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/professores.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 <body>
+
     <header id="header">
         <nav class="navbar">
             <div class="logo">
@@ -32,38 +35,60 @@
             </div>
         </nav>
     </header>
+
     <main>
+
+    <!-- HERO -->
     <section class="hero-professores">
+
         <div class="container">
+
             <h1>Encontre o professor ideal</h1>
+
             <p>
                 Mais de 8.000 universitários prontos para te ajudar a aprender.
             </p>
+
             <div class="search-box">
+
                 <i class='bx bx-search'></i>
+
                 <input
+                    id="pesquisa"
                     type="text"
                     placeholder="Buscar por matéria, professor ou universidade..."
                 >
+
             </div>
+
         </div>
+
     </section>
+
+    <!-- CATEGORIAS -->
     <section class="categorias">
+
         <div class="container">
-            <button class="ativo">Todos</button>
-            <button>Matemática</button>
-            <button>Programação</button>
-            <button>Biologia</button>
-            <button>Português</button>
-            <button>Física</button>
-            <button>Química</button>
-            <button>Direito</button>
-            <button>Administração</button>
+
+            <button class="filtro" data-filtro="todos">Todos</button>
+            <button class="filtro" data-filtro="matematica">Matemática</button>
+            <button class="filtro" data-filtro="programacao">Programação</button>
+            <button class="filtro" data-filtro="biologia">Biologia</button>
+            <button class="filtro" data-filtro="portugues">Português</button>
+            <button class="filtro" data-filtro="fisica">Física</button>
+            <button class="filtro" data-filtro="quimica">Química</button>
+            <button class="filtro" data-filtro="direito">Direito</button>
+            <button class="filtro" data-filtro="administracao">Administração</button>
+
         </div>
-    </section> 
+
+    </section>
+
+    <!-- PROFESSORES -->
     <section class="professores">
         <div class="container">
-            <div class="card-professor">
+
+            <div class="card-professor" data-materia="matematica">
                 <img src="img/teacher-1.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">USP</span>
@@ -83,7 +108,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-            <div class="card-professor">
+
+            <div class="card-professor" data-materia="programacao">
                 <img src="img/teacher-2.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">UNICAMP</span>
@@ -103,7 +129,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-            <div class="card-professor">
+
+            <div class="card-professor" data-materia="biologia">
                 <img src="img/teacher-3.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">UFRJ</span>
@@ -117,13 +144,14 @@
                         ⭐ 4.9 (110)
                         <strong>R$ 60/h</strong>
                     </div>
-                    <span class="online">
-                        Online
+                    <span class="presencial">
+                        Presencial
                     </span>
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-            <div class="card-professor">
+
+            <div class="card-professor" data-materia="administracao">
                 <img src="img/teacher-4.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">FGV</span>
@@ -143,7 +171,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-            <div class="card-professor">
+
+            <div class="card-professor" data-materia="portugues">
                 <img src="img/teacher-1.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">UFMG</span>
@@ -163,7 +192,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-            <div class="card-professor">
+
+            <div class="card-professor" data-materia="fisica">
                 <img src="img/teacher-2.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">USP</span>
@@ -177,13 +207,14 @@
                         ⭐ 4.8 (76)
                         <strong>R$ 75/h</strong>
                     </div>
-                    <span class="online">
-                        Online
+                    <span class="presencial">
+                        Presencial
                     </span>
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-            <div class="card-professor">
+
+            <div class="card-professor" data-materia="quimica">
                 <img src="img/teacher-3.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">UFSC</span>
@@ -203,7 +234,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-            <div class="card-professor">
+
+            <div class="card-professor" data-materia="direito">
                 <img src="img/teacher-4.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">PUC-RIO</span>
@@ -211,11 +243,11 @@
                     <p class="formacao">Direito</p>
                     <div class="cidade">
                         <i class='bx bx-map'></i>
-                        <span>São Paulo</span>
+                        <span>Rio de Janeiro</span>
                     </div>
                     <div class="avaliacao">
-                        ⭐ 4.9 (128)
-                        <strong>R$ 70/h</strong>
+                        ⭐ 4.7 (64)
+                        <strong>R$ 80/h</strong>
                     </div>
                     <span class="online">
                         Online
@@ -223,9 +255,13 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
+
         </div>
+        
     </section>
+
 </main>
+
 <footer class="footer">
         <div class="footer-container">
             <div class="footer-top">
@@ -249,7 +285,7 @@
                 <div class="footer-links">
                     <h4>Navegação</h4>
                     <a href="index.html">Home</a>
-                    <a href="#">Encontrar Professores</a>
+                    <a href="professores.html">Encontrar Professores</a>
                     <a href="empresas.html">Empresas</a>
                     <a href="#">Como Funciona</a>
                     <a href="#">Sobre</a>
@@ -282,6 +318,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/professores.js"></script>
 </body>
 
 </html>

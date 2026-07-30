@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -226,6 +227,10 @@ header.scrolled{
     display:flex;
     gap:14px;
     align-items:center;
+}
+
+.stat div h3{
+    font-size: 20px;
 }
 
 .icon{
@@ -819,6 +824,17 @@ header.scrolled{
 
 .publish-btn:hover{
     background:#1D4ED8;
+}
+
+.opnions {
+    max-width:1200px;
+    margin:100px auto;
+    text-align:center;
+    
+}
+
+.opnions h2{
+    font-size:48px;
 }
 
 .cta{

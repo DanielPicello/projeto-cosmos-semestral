@@ -1,3 +1,7 @@
+/* ==========================
+   HERO
+========================== */
+
 .hero-company {
     background: #f5f9ff;
     padding: 70px 8%;
@@ -44,6 +48,10 @@
 .publish-btn i {
     font-size: 20px;
 }
+
+/* ==========================
+   JOBS
+========================== */
 
 .jobs {
     padding: 70px 8%;
@@ -103,6 +111,9 @@
     margin-top: 4px;
     font-size: 1.25rem;
 }
+/* ==========================
+   TAGS
+========================== */
 
 .tags {
     display: flex;
@@ -126,6 +137,10 @@
     font-weight: 600;
 }
 
+/* ==========================
+   DETALHES
+========================== */
+
 .details {
     display: flex;
     flex-direction: column;
@@ -146,11 +161,19 @@
     font-size: 18px;
 }
 
+/* ==========================
+   SALÁRIO
+========================== */
+
 .job-card h2 {
     color: #0f172a;
     font-size: 1.8rem;
     margin-bottom: 25px;
 }
+
+/* ==========================
+   BOTÃO
+========================== */
 
 .job-card button {
     width: 100%;
@@ -170,20 +193,29 @@
     transform: translateY(-2px);
 }
 
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
 @media (max-width: 992px) {
+    
     .hero-container {
         flex-direction: column;
         text-align: center;
     }
+
     .hero-left h1 {
         font-size: 2.3rem;
     }
+
     .hero-left p {
         margin-bottom: 25px;
     }
+
     .jobs-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media (max-width: 768px) {
