@@ -5,7 +5,7 @@ const panelConfig = {
             {
                 label: "Estudos",
                 items: [
-                    { icon: "bx-grid-alt", text: "Visão geral", href: "#" },
+                    { icon: "bx-grid-alt", text: "Visão geral", href: "painel-aluno.html" },
                     { icon: "bx-book-open", text: "Minhas aulas", href: "#" },
                     { icon: "bx-calendar", text: "Agenda", href: "#" },
                     { icon: "bx-check-square", text: "Tarefas", href: "#" },
@@ -22,8 +22,8 @@ const panelConfig = {
             {
                 label: "Conta",
                 items: [
-                    { icon: "bx-credit-card", text: "Pagamentos", href: "pagamentos.html" },
-                    { icon: "bx-user-circle", text: "Meu perfil", href: "perfil.html" }
+                    { icon: "bx-credit-card", text: "Pagamentos", href: "#" },
+                    { icon: "bx-user-circle", text: "Meu perfil", href: "#" }
                 ]
             }
         ]
