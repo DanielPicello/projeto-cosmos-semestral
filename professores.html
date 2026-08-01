@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professores</title>
-    
+    <title>Professores | UniLink</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/professores.css">
+    <link rel="stylesheet" href="css/marketing/professores.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 <body>
-
     <header id="header">
         <nav class="navbar">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <div class="logo-icon">
-                    <!-- <i class='bx bxs-layer'></i> -->
+                    <i class='bx bxs-layer'></i>
                 </div>
-                <span>UniLink</span>
-            </div>
+                <span >Uni<span style="color:#2563EB">Link</span></span>
+            </a>
             <ul class="nav-links">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="professores.html">Encontrar Professores</a></li>
                 <li><a href="empresas.html">Empresas</a></li>
                 <li><a href="#">Como Funciona</a></li>
@@ -28,48 +25,51 @@
             </ul>
             <div class="nav-buttons">
                 <button class="btn-login" onclick="window.location.href='login.html'">
-                    <i class='bx bx-log-in' style='color:#0e0e0e' ></i>
+                    <i class='bx bx-log-in' style='color:#0e0e0e'></i>
                     Login
                 </button>
-                <button class="btn-register">Cadastre-se</button>
+                <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class='bx bx-menu'></i>
+            </button>
+            <div class="mobile-menu" id="mobileMenu">
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="professores.html">Encontrar Professores</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="#">Como Funciona</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+                <div class="mobile-nav-buttons">
+                    <button class="btn-login" onclick="window.location.href='login.html'">
+                        <i class='bx bx-log-in'></i>
+                        Login
+                    </button>
+                    <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+                </div>
             </div>
         </nav>
     </header>
-
     <main>
-
-    <!-- HERO -->
     <section class="hero-professores">
-
         <div class="container">
-
             <h1>Encontre o professor ideal</h1>
-
             <p>
                 Mais de 8.000 universitários prontos para te ajudar a aprender.
             </p>
-
             <div class="search-box">
-
                 <i class='bx bx-search'></i>
-
                 <input
                     id="pesquisa"
                     type="text"
                     placeholder="Buscar por matéria, professor ou universidade..."
                 >
-
             </div>
-
         </div>
-
     </section>
-
-    <!-- CATEGORIAS -->
     <section class="categorias">
-
         <div class="container">
-
             <button class="filtro" data-filtro="todos">Todos</button>
             <button class="filtro" data-filtro="matematica">Matemática</button>
             <button class="filtro" data-filtro="programacao">Programação</button>
@@ -79,21 +79,16 @@
             <button class="filtro" data-filtro="quimica">Química</button>
             <button class="filtro" data-filtro="direito">Direito</button>
             <button class="filtro" data-filtro="administracao">Administração</button>
-
         </div>
-
     </section>
-
-    <!-- PROFESSORES -->
     <section class="professores">
         <div class="container">
-
             <div class="card-professor" data-materia="matematica">
-                <img src="img/teacher-1.jpg" alt="Professor">
+                <img src="img/professores/teacher-1.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">USP</span>
                     <h3 class="nome">Mariana Oliveira</h3>
-                    <p class="formacao">Engenharia sivil</p>
+                    <p class="formacao">Engenharia civil</p>
                     <div class="cidade">
                         <i class='bx bx-map'></i>
                         <span>São Paulo</span>
@@ -108,9 +103,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-
             <div class="card-professor" data-materia="programacao">
-                <img src="img/teacher-2.jpg" alt="Professor">
+                <img src="img/professores/teacher-2.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">UNICAMP</span>
                     <h3 class="nome">João Pedro Lima</h3>
@@ -129,9 +123,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-
             <div class="card-professor" data-materia="biologia">
-                <img src="img/teacher-3.jpg" alt="Professor">
+                <img src="img/professores/teacher-3.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">UFRJ</span>
                     <h3 class="nome">Beatriz Santos</h3>
@@ -150,9 +143,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-
             <div class="card-professor" data-materia="administracao">
-                <img src="img/teacher-4.jpg" alt="Professor">
+                <img src="img/professores/teacher-4.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">FGV</span>
                     <h3 class="nome">Lucas Almeida</h3>
@@ -171,9 +163,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-
             <div class="card-professor" data-materia="portugues">
-                <img src="img/teacher-1.jpg" alt="Professor">
+                <img src="img/professores/teacher-1.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">UFMG</span>
                     <h3 class="nome">Carla Mendes</h3>
@@ -192,9 +183,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-
             <div class="card-professor" data-materia="fisica">
-                <img src="img/teacher-2.jpg" alt="Professor">
+                <img src="img/professores/teacher-2.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">USP</span>
                     <h3 class="nome">Pedro Henrique</h3>
@@ -213,9 +203,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-
             <div class="card-professor" data-materia="quimica">
-                <img src="img/teacher-3.jpg" alt="Professor">
+                <img src="img/professores/teacher-3.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">UFSC</span>
                     <h3 class="nome">Larissa Costa</h3>
@@ -234,9 +223,8 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-
             <div class="card-professor" data-materia="direito">
-                <img src="img/teacher-4.jpg" alt="Professor">
+                <img src="img/professores/teacher-4.jpg" alt="Professor">
                 <div class="card-info">
                     <span class="universidade">PUC-RIO</span>
                     <h3 class="nome">Bruno Rocha</h3>
@@ -255,20 +243,16 @@
                     <a href="#">Ver Perfil</a>
                 </div>
             </div>
-
         </div>
-        
     </section>
-
 </main>
-
 <footer class="footer">
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
                     <a href="#" class="footer-logo">
                         <div class="footer-logo-icon">
-                            <i class="fa-solid fa-layer-group"></i>
+                            <i class='bx bxs-layer'></i>
                         </div>
                         <span>UniLink</span>
                     </a>
@@ -292,10 +276,9 @@
                 </div>
                 <div class="footer-links">
                     <h4>Para usuários</h4>
-                    <a href="#">Cadastrar-se</a>
+                    <a href="register.html">Cadastrar-se</a>
                     <a href="login.html">Login</a>
-                    <a href="#">Central de Ajuda</a>
-                    <a href="#">Perguntas Frequentes</a>
+                    <a href="faq.html">Perguntas Frequentes</a>
                 </div>
                 <div class="footer-links">
                     <h4>Para empresas</h4>
@@ -318,7 +301,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/professores.js"></script>
+    <script src="js/marketing/professores.js"></script>
 </body>
-
 </html>

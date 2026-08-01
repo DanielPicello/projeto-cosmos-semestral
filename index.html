@@ -3,34 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniLink - Transforme conhecimento em oportunidades</title>
+    <title>UniLink | Transforme conhecimento em oportunidades</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
     <header id="header">
         <nav class="navbar">
-            <div class="logo">
-                <div class="logo-icon">
-                    <!-- <i class='bx bxs-layer'></i> -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class='bx bxs-layer'></i>
+                    </div>
+                    <span >Uni<span style="color:#2563EB">Link</span></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="professores.html">Encontrar Professores</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="#">Como Funciona</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn-login" onclick="window.location.href='login.html'">
+                        <i class='bx bx-log-in' style='color:#0e0e0e'></i>
+                        Login
+                    </button>
+                    <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
                 </div>
-                <span>Uni<span style="color:#1565F5">Link</span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="professores.html">Encontrar Professores</a></li>
-                <li><a href="empresas.html">Empresas</a></li>
-                <li><a href="#">Como Funciona</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-            <div class="nav-buttons">
-                <button class="btn-login" onclick="window.location.href='login.html'">
-                    <i class='bx bx-log-in' style='color:#0e0e0e' ></i>
-                    Login
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                    <i class='bx bx-menu'></i>
                 </button>
-                <button class="btn-register">Cadastre-se</button>
-            </div>
-        </nav>
+                <div class="mobile-menu" id="mobileMenu">
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="professores.html">Encontrar Professores</a></li>
+                        <li><a href="empresas.html">Empresas</a></li>
+                        <li><a href="#">Como Funciona</a></li>
+                        <li><a href="#">Sobre</a></li>
+                    </ul>
+                    <div class="mobile-nav-buttons">
+                        <button class="btn-login" onclick="window.location.href='login.html'">
+                            <i class='bx bx-log-in'></i>
+                            Login
+                        </button>
+                        <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+                    </div>
+                </div>
+            </nav>
     </header>
     <main>
         <section class="hero">
@@ -42,11 +62,11 @@
                     O UniLink conecta universitários a alunos e empresas, gerando renda, experiência profissional e acesso à educação de qualidade.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#" class="hero-btn hero-btn-primary">
+                    <a href="professores.html" class="hero-btn hero-btn-primary">
                         <i class='bx bx-search-alt'></i>
                         Encontrar Professor
                     </a>
-                    <a href="#" class="hero-btn hero-btn-secondary">
+                    <a href="register.html" class="hero-btn hero-btn-secondary">
                         <i class='bx bxs-graduation' ></i>
                         Quero Ensinar
                     </a>
@@ -218,11 +238,11 @@
         <section class="teachers-contrast">
             <div class="teachers-header">
                 <h2>Professores em destaque</h2>
-                <a href="#">Ver todos</a>
+                <a href="professores.html">Ver todos</a>
             </div>
             <div class="teachers">
                 <div class="card-teachers">
-                    <img src="img/teacher-1.jpg" alt="Mariana Oliveira">
+                    <img src="img/professores/teacher-1.jpg" alt="Mariana Oliveira">
                     <div class="card-content">
                         <span class="university">USP</span>
                         <h3>Mariana Oliveira</h3>
@@ -236,7 +256,7 @@
                     </div>
                 </div>
                 <div class="card-teachers">
-                    <img src="img/teacher-2.jpg" alt="João Pedro">
+                    <img src="img/professores/teacher-2.jpg" alt="João Pedro">
                     <div class="card-content">
                         <span class="university">UNICAMP</span>
                         <h3>João Pedro Lima</h3>
@@ -250,7 +270,7 @@
                     </div>
                 </div>
                 <div class="card-teachers">
-                    <img src="img/teacher-3.jpg" alt="Beatriz Santos">
+                    <img src="img/professores/teacher-3.jpg" alt="Beatriz Santos">
                     <div class="card-content">
                         <span class="university">UFRJ</span>
                         <h3>Beatriz Santos</h3>
@@ -264,7 +284,7 @@
                     </div>
                 </div>
                 <div class="card-teachers">
-                    <img src="img/teacher-4.jpg" alt="Lucas Almeida">
+                    <img src="img/professores/teacher-4.jpg" alt="Lucas Almeida">
                     <div class="card-content">
                         <span class="university">FGV</span>
                         <h3>Lucas Almeida</h3>
@@ -305,11 +325,11 @@
                             <i class="fa-regular fa-clock"></i>
                             Prazo: 30 dias
                         </p>
-                        <a href="#" class="details-btn">
+                        <a href="/empresas.html" class="details-btn">
                             Ver detalhes da oportunidade
                         </a>
                     </article>
-                    <img src="img/companies-meeting.jpg" alt="Equipe da empresa">
+                    <img src="img/equipes/companies-meeting.jpg" alt="Equipe da empresa">
                 </div>
                 <div class="recruitment-content">
                     <h2>
@@ -318,83 +338,109 @@
                     <p>
                         Publique oportunidades de projetos, estágios ou freelances e encontre os melhores talentos para impulsionar seus resultados.
                     </p>
-                    <a href="#" class="publish-btn">
+                    <a href="/login.html" class="publish-btn">
                         <i class="fa-regular fa-paper-plane"></i>
                         Publicar oportunidade
                     </a>
                 </div>
             </div>
         </section>
-        <section class="opnions">
-            <div class="opinios-content">
-                <h2>O que nossos usuários dizem </h2>
-                <div class="container">
-                    <div class="opinion-card">
-                        <i class='bx bxs-bookmark-alt'></i>
-                        <p class="opinator-name">Ana Carolina</p>
-                        <span class="role">Aluna</span>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <span class="role">"Encontrei o professor perfeito para Cálculo. Suas aulas me ajudaram a aprender de verdade e melhorar minhas notas."</span>
+        <section class="testimonials">
+            <h2>O que nossos usuários dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="testimonial-author">
+                        <img src="img/professores/teacher-1.jpg" alt="Ana Carolina">
+                        <div>
+                            <h4>Ana Carolina</h4>
+                            <span>Aluna</span>
+                        </div>
                     </div>
-                    <div class="opinion-card">
-                        <i class='bx bxs-bookmark-alt'></i>
-                        <p class="opinator-name">Rafael Lima</p>
-                        <span class="role">Professor</span>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <span class="role">"O UniLink mudou minha forma de ensinar. Consigo ajudar mais alunos e ainda gerar uma renda extra incrível."</span>
+                    <div class="testimonial-stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
                     </div>
-                    <div class="opinion-card">
-                        <i class='bx bxs-bookmark-alt'></i>
-                        <p class="opinator-name">Juliana Pereira</p>
-                        <span class="role">RH - Tech Solutions</span>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <i class='bx bxs-star' style='color:#ffd500' ></i>
-                        <span class="role">"Encontramos talentos incríveis através da plataforma. O processo é rápido, fácil e muito eficiente."</span>
+                    <p>"Encontrei o professor perfeito para Cálculo. Suas aulas me ajudaram a aprender de verdade e melhorar minhas notas."</p>
+                </div>
+                <div class="testimonial-card">
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="testimonial-author">
+                        <img src="img/professores/teacher-2.jpg" alt="Rafael Lima">
+                        <div>
+                            <h4>Rafael Lima</h4>
+                            <span>Professor</span>
+                        </div>
                     </div>
+                    <div class="testimonial-stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>"O UniLink mudou minha forma de ensinar. Consigo ajudar mais alunos e ainda gerar uma renda extra incrível."</p>
+                </div>
+                <div class="testimonial-card">
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="testimonial-author">
+                        <img src="img/professores/teacher-3.jpg" alt="Juliana Pereira">
+                        <div>
+                            <h4>Juliana Pereira</h4>
+                            <span>RH - Tech Solutions</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>"Encontramos talentos incríveis através da plataforma. O processo é rápido, fácil e muito eficiente."</p>
                 </div>
             </div>
         </section>
-        <section class="numbers">
-            <div class="numbers-content">
-                <h2>Nossos Números</h2>
-                <div class="numbers-card">
-                    <div class="img-numbers">
+        <section class="stats-bar">
+            <div class="stats-bar-container">
+                <div class="stats-bar-item">
+                    <div class="stats-bar-icon">
                         <i class='bx bxs-group'></i>
                     </div>
-                    <h3>+25.000</h3>
-                    <p>Usuários cadastrados</p>
+                    <div>
+                        <h3>+25.000</h3>
+                        <p>Usuários cadastrados</p>
+                    </div>
                 </div>
-                <div class="numbers-card">
-                    <div class="img-numbers">
+                <div class="stats-bar-item">
+                    <div class="stats-bar-icon">
                         <i class='bx bxs-graduation'></i>
                     </div>
-                    <h3>+8.000</h3>
-                    <p>Professores ativos</p>
-                </div>
-                <div class="numbers-card">
-                    <div class="img-numbers">
-                        <i class='bx bxs-time-five'></i>
+                    <div>
+                        <h3>+8.000</h3>
+                        <p>Professores ativos</p>
                     </div>
-                    <h3>+45.000</h3>
-                    <p>Horas de aula realizadas</p>
                 </div>
-                <div class="numbers-card">
-                    <div class="img-numbers">
-                        <i class='bx bxs-buildings'></i>
+                <div class="stats-bar-item">
+                    <div class="stats-bar-icon">
+                        <i class='bx bx-time-five'></i>
                     </div>
-                    <h3>+500</h3>
-                    <p>Empresas parceiras</p>
+                    <div>
+                        <h3>+45.000</h3>
+                        <p>Horas de aula realizadas</p>
+                    </div>
+                </div>
+                <div class="stats-bar-item">
+                    <div class="stats-bar-icon">
+                        <i class='bx bxs-building'></i>
+                    </div>
+                    <div>
+                        <h3>+500</h3>
+                        <p>Empresas parceiras</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -408,11 +454,11 @@
                 </p>
             </div>
             <div class="cta-actions">
-                <button class="filled">
+                <button onclick="window.location.href='professores.html'" class="filled">
                     <i class='bx bx-search-alt'></i>
                     Encontrar Professor
                 </button>
-                <button class="outline">
+                <button onclick="window.location.href='register.html'" class="outline">
                     <i class='bx bxs-graduation'></i>
                     Cadastrar como Professor
                 </button>
@@ -425,7 +471,7 @@
                 <div class="footer-brand">
                     <a href="#" class="footer-logo">
                         <div class="footer-logo-icon">
-                            <i class="fa-solid fa-layer-group"></i>
+                            <i class='bx bxs-layer'></i>
                         </div>
                         <span>UniLink</span>
                     </a>
@@ -449,10 +495,9 @@
                 </div>
                 <div class="footer-links">
                     <h4>Para usuários</h4>
-                    <a href="#">Cadastrar-se</a>
+                    <a href="register.html">Cadastrar-se</a>
                     <a href="login.html">Login</a>
-                    <a href="#">Central de Ajuda</a>
-                    <a href="#">Perguntas Frequentes</a>
+                    <a href="faq.html">Perguntas Frequentes</a>
                 </div>
                 <div class="footer-links">
                     <h4>Para empresas</h4>

@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.hero-company, .hero-company *, .jobs, .jobs *{
+    font-family:'Inter', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
 .hero-company {
     background: #f5f9ff;
     padding: 70px 8%;
@@ -171,19 +179,24 @@
 }
 
 @media (max-width: 992px) {
+    
     .hero-container {
         flex-direction: column;
         text-align: center;
     }
+
     .hero-left h1 {
         font-size: 2.3rem;
     }
+
     .hero-left p {
         margin-bottom: 25px;
     }
+
     .jobs-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media (max-width: 768px) {

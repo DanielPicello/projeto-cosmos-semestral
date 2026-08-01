@@ -5,20 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login | UniLink</title>
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/auth/login.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <header id="header">
-            <nav class="navbar">
-                <div class="logo">
+           <nav class="navbar">
+                <a href="index.html" class="logo">
                     <div class="logo-icon">
-                        <!-- <i class='bx bxs-layer'></i> -->
+                        <i class='bx bxs-layer'></i>
                     </div>
-                    <span>UniLink</span>
-                </div>
+                    <span >Uni<span style="color:#2563EB">Link</span></span>
+                </a>
                 <ul class="nav-links">
-                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="professores.html">Encontrar Professores</a></li>
                     <li><a href="empresas.html">Empresas</a></li>
                     <li><a href="#">Como Funciona</a></li>
@@ -26,10 +26,29 @@
                 </ul>
                 <div class="nav-buttons">
                     <button class="btn-login" onclick="window.location.href='login.html'">
-                        <i class='bx bx-log-in' style='color:#0e0e0e' ></i>
+                        <i class='bx bx-log-in' style='color:#0e0e0e'></i>
                         Login
                     </button>
-                    <button class="btn-register">Cadastre-se</button>
+                    <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <div class="mobile-menu" id="mobileMenu">
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="professores.html">Encontrar Professores</a></li>
+                        <li><a href="empresas.html">Empresas</a></li>
+                        <li><a href="#">Como Funciona</a></li>
+                        <li><a href="#">Sobre</a></li>
+                    </ul>
+                    <div class="mobile-nav-buttons">
+                        <button class="btn-login" onclick="window.location.href='login.html'">
+                            <i class='bx bx-log-in'></i>
+                            Login
+                        </button>
+                        <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -41,7 +60,7 @@
                         <p>
                             Acesse sua conta UniLink.
                         </p>
-                        <form>
+                        <form onsubmit="window.location.href='dashboard.html'; return false;">
                             <div class="input-group">
                                 <label for="email">
                                     E-mail
@@ -67,13 +86,13 @@
                                     placeholder="Digite sua senha"
                                 >
                             </div>
-                            <button type="submit" class="btn-login-form">
+                            <button  type="submit" class="btn-login-form">
                                 Entrar
                             </button>
                         </form>
                         <p class="register-link">
                             Ainda não possui uma conta?
-                            <a href="#">
+                            <a href="register.html">
                                 Cadastre-se
                             </a>
                         </p>
@@ -87,7 +106,7 @@
                     <div class="footer-brand">
                         <a href="#" class="footer-logo">
                             <div class="footer-logo-icon">
-                                <i class="fa-solid fa-layer-group"></i>
+                                <i class='bx bxs-layer'></i>
                             </div>
                             <span>UniLink</span>
                         </a>
@@ -111,10 +130,9 @@
                     </div>
                     <div class="footer-links">
                         <h4>Para usuários</h4>
-                        <a href="#">Cadastrar-se</a>
+                        <a href="register.html">Cadastrar-se</a>
                         <a href="login.html">Login</a>
-                        <a href="#">Central de Ajuda</a>
-                        <a href="#">Perguntas Frequentes</a>
+                        <a href="faq.html">Perguntas Frequentes</a>
                     </div>
                     <div class="footer-links">
                         <h4>Para empresas</h4>

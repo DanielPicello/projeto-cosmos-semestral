@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.register-page, .register-page *{
+    font-family:'Inter', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
 .register-page{
     min-height:100vh;
     padding:140px 20px 80px;
@@ -25,6 +33,7 @@
 }
 
 .register-step-circle{
+    position:relative;
     width:34px;
     height:34px;
     border-radius:50%;
@@ -37,6 +46,11 @@
     transition:.25s;
 }
 
+.register-step-circle .step-check{
+    display:none;
+    font-size:18px;
+}
+
 .register-step.active{
     color:#0F172A;
     font-weight:600;
@@ -45,6 +59,23 @@
 .register-step.active .register-step-circle{
     background:#2563EB;
     color:white;
+}
+
+.register-step.completed{
+    color:#16A34A;
+}
+
+.register-step.completed .register-step-circle{
+    background:#16A34A;
+    color:white;
+}
+
+.register-step.completed .register-step-circle .step-number{
+    display:none;
+}
+
+.register-step.completed .register-step-circle .step-check{
+    display:inline-flex;
 }
 
 .register-line{
@@ -62,8 +93,17 @@
     box-shadow:0 10px 35px rgba(15,23,42,.04);
 }
 
+.register-panel{
+    animation:register-fade .3s ease;
+}
+
+@keyframes register-fade{
+    from{ opacity:0; transform:translateY(6px); }
+    to{ opacity:1; transform:translateY(0); }
+}
+
 .register-title{
-    font-size:42px;
+    font-size:32px;
     font-weight:700;
     color:#0F172A;
     margin-bottom:10px;
@@ -71,8 +111,8 @@
 
 .register-subtitle{
     color:#64748B;
-    font-size:17px;
-    margin-bottom:35px;
+    font-size:16px;
+    margin-bottom:32px;
 }
 
 .register-options{
@@ -113,9 +153,9 @@
 }
 
 .register-option h3{
-    font-size:24px;
+    font-size:20px;
     color:#0F172A;
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
 .register-option p{
@@ -124,10 +164,71 @@
     line-height:1.6;
 }
 
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px 24px;
+    margin-bottom:28px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.form-group-full{
+    grid-column:1 / -1;
+}
+
+.form-group label{
+    font-size:14px;
+    font-weight:600;
+    color:#0F172A;
+}
+
+.form-group input,
+.form-group textarea{
+    height:48px;
+    padding:0 16px;
+    border:1px solid #DCE5EF;
+    border-radius:12px;
+    font-size:15px;
+    font-family:inherit;
+    color:#0F172A;
+    outline:none;
+    transition:.2s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    color:#94A3B8;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:#2563EB;
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+}
+
+.form-group textarea{
+    height:auto;
+    min-height:110px;
+    padding:14px 16px;
+    resize:vertical;
+    line-height:1.5;
+}
+
 .register-footer{
     display:flex;
     justify-content:flex-end;
+
     margin-top:36px;
+}
+
+.register-footer-split{
+    justify-content:space-between;
+    align-items:center;
 }
 
 .register-button{
@@ -162,6 +263,28 @@
 .register-button:not(:disabled){
     opacity:1;
     cursor:pointer;
+    background:#2563EB;
+}
+
+.register-back-btn{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    background:none;
+    border:none;
+    color:#475569;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.register-back-btn:hover{
+    color:#0F172A;
+}
+
+.register-back-btn i{
+    font-size:18px;
 }
 
 .register-login{
@@ -187,30 +310,29 @@
     .register-line{
         width:45px;
     }
-
+    .form-grid{
+        grid-template-columns:1fr;
+    }
 }
 
 @media(max-width:650px){
-
     .register-page{
         padding-top:120px;
     }
-
     .register-card{
         padding:28px;
     }
-
     .register-title{
-        font-size:34px;
+        font-size:26px;
     }
-
     .register-steps{
         font-size:13px;
     }
-
     .register-line{
         width:25px;
         margin:0 10px;
     }
-
+    .register-step span{
+        display:none;
+    }
 }

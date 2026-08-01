@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes | UniLink</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/marketing/faq.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class='bx bxs-layer'></i>
+                </div>
+                <span >Uni<span style="color:#2563EB">Link</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professores.html">Encontrar Professores</a></li>
+                <li><a href="empresas.html">Empresas</a></li>
+                <li><a href="#">Como Funciona</a></li>
+                <li><a href="faq.html">Sobre</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">
+                    <i class='bx bx-log-in' style='color:#0e0e0e'></i>
+                    Login
+                </button>
+                <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class='bx bx-menu'></i>
+            </button>
+            <div class="mobile-menu" id="mobileMenu">
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="professores.html">Encontrar Professores</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="#">Como Funciona</a></li>
+                    <li><a href="faq.html">Sobre</a></li>
+                </ul>
+                <div class="mobile-nav-buttons">
+                    <button class="btn-login" onclick="window.location.href='login.html'">
+                        <i class='bx bx-log-in'></i>
+                        Login
+                    </button>
+                    <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="faq-hero">
+            <div class="faq-container">
+                <span class="faq-eyebrow">Central de Ajuda</span>
+                <h1>Perguntas Frequentes</h1>
+                <p>Tudo o que você precisa saber sobre alunos, professores e empresas na UniLink.</p>
+                <div class="faq-search-box">
+                    <i class='bx bx-search'></i>
+                    <input id="faqSearch" type="text" placeholder="Digite sua dúvida... Ex: como funciona o pagamento?">
+                </div>
+            </div>
+        </section>
+        <section class="faq-categorias">
+            <div class="faq-container">
+                <button class="faq-filtro ativo" data-filtro="todos">
+                    <i class='bx bx-grid-alt'></i>
+                    Todos
+                </button>
+                <button class="faq-filtro" data-filtro="geral">
+                    <i class='bx bx-help-circle'></i>
+                    Geral
+                </button>
+                <button class="faq-filtro" data-filtro="alunos">
+                    <i class='bx bx-book-open'></i>
+                    Alunos
+                </button>
+                <button class="faq-filtro" data-filtro="professores">
+                    <i class='bx bxs-graduation'></i>
+                    Professores
+                </button>
+                <button class="faq-filtro" data-filtro="empresas">
+                    <i class='bx bx-buildings'></i>
+                    Empresas
+                </button>
+                <button class="faq-filtro" data-filtro="pagamentos">
+                    <i class='bx bx-credit-card'></i>
+                    Pagamentos
+                </button>
+            </div>
+        </section>
+        <section class="faq-list-section">
+            <div class="faq-container faq-layout">
+                <div class="faq-list" id="faqList">
+                    <div class="faq-group" data-categoria="geral">
+                        <h2 class="faq-group-title">
+                            <i class='bx bx-help-circle'></i>
+                            Geral
+                        </h2>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                O que é a UniLink?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>A UniLink é uma plataforma que conecta universitários a alunos e empresas, permitindo dar aulas particulares, encontrar professores e acessar oportunidades de projetos, estágios e freelances.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                A UniLink é gratuita?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Sim! Criar conta como aluno, professor ou empresa é totalmente gratuito. Cobramos apenas uma pequena taxa de serviço sobre transações realizadas dentro da plataforma.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Como faço para criar minha conta?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Clique em "Cadastre-se" no topo da página, escolha se você é aluno, professor ou empresa e preencha seus dados básicos. O processo leva menos de 3 minutos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-group" data-categoria="alunos">
+                        <h2 class="faq-group-title">
+                            <i class='bx bx-book-open'></i>
+                            Alunos
+                        </h2>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Como encontro um professor ideal para mim?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Use a busca na página "Encontrar Professores" e filtre por matéria, universidade ou avaliação. Você também pode conferir o perfil completo, preço por hora e se as aulas são online ou presenciais.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                As aulas podem ser online e presenciais?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Sim. Cada professor define no perfil se oferece aulas online, presenciais ou ambas. Você combina o formato diretamente com o professor escolhido.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Posso cancelar ou reagendar uma aula?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Sim. Você pode reagendar ou cancelar diretamente pelo painel do aluno, respeitando a política de cada professor, geralmente com no mínimo 12 horas de antecedência.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-group" data-categoria="professores">
+                        <h2 class="faq-group-title">
+                            <i class='bx bxs-graduation'></i>
+                            Professores
+                        </h2>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Quem pode se cadastrar como professor?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Qualquer universitário matriculado em uma instituição de ensino superior pode se cadastrar como professor e oferecer aulas nas matérias em que tem domínio.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Como defino meu valor por hora?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Durante o cadastro do seu perfil você define livremente o valor por hora. Você pode alterá-lo a qualquer momento no seu painel de professor.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Como recebo pelas aulas dadas?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Os pagamentos são processados pela plataforma e transferidos para sua conta cadastrada após a confirmação da aula, com prazo de até 2 dias úteis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-group" data-categoria="empresas">
+                        <h2 class="faq-group-title">
+                            <i class='bx bx-buildings'></i>
+                            Empresas
+                        </h2>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Como publico uma oportunidade na UniLink?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Crie uma conta como empresa, acesse a área "Empresas" e clique em "Publicar oportunidade". Preencha o cargo, tecnologias, remuneração e prazo para começar a receber candidaturas.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Quais tipos de vaga posso publicar?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>É possível publicar vagas de estágio, freelance, CLT ou projetos pontuais, sempre voltadas para conectar sua empresa a talentos universitários qualificados.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Existe algum custo para contratar pela plataforma?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>A publicação de vagas é gratuita. Para empresas com alto volume de contratação, oferecemos planos com recursos extras de destaque e triagem de candidatos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-group" data-categoria="pagamentos">
+                        <h2 class="faq-group-title">
+                            <i class='bx bx-credit-card'></i>
+                            Pagamentos
+                        </h2>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Quais formas de pagamento são aceitas?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Aceitamos cartão de crédito, Pix e boleto bancário para pagamento de aulas e planos de empresas.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                A UniLink cobra alguma taxa?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Cobramos uma pequena taxa de serviço sobre o valor das aulas, usada para manter a plataforma segura e em constante melhoria.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Como solicito reembolso?
+                                <i class='bx bx-chevron-down'></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Caso uma aula não ocorra por falha do professor, você pode solicitar reembolso pelo painel do aluno em até 7 dias após a data prevista da aula.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-empty" id="faqEmpty">
+                        <i class='bx bx-search-alt'></i>
+                        <h3>Nenhum resultado encontrado</h3>
+                        <p>Tente buscar por outras palavras-chave ou entre em contato com nosso suporte.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq-cta">
+            <div class="faq-container faq-cta-container">
+                <div class="faq-cta-content">
+                    <h2>Ainda tem dúvidas?</h2>
+                    <p>Nossa equipe de suporte está pronta para te ajudar com qualquer questão sobre a plataforma.</p>
+                </div>
+                <div class="faq-cta-actions">
+                    <a href="#" class="faq-cta-btn faq-cta-filled">
+                        <i class='bx bx-message-dots'></i>
+                        Falar com o suporte
+                    </a>
+                    <a href="mailto:contato@unilink.com" class="faq-cta-btn faq-cta-outline">
+                        <i class='bx bx-envelope'></i>
+                        contato@unilink.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class='bx bxs-layer'></i>
+                        </div>
+                        <span>UniLink</span>
+                    </a>
+                    <p>
+                        Conectando universitários, alunos e empresas para um futuro com mais conhecimento e oportunidades.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <a href="index.html">Home</a>
+                    <a href="professores.html">Encontrar Professores</a>
+                    <a href="empresas.html">Empresas</a>
+                    <a href="#">Como Funciona</a>
+                    <a href="faq.html">Sobre</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Para usuários</h4>
+                    <a href="register.html">Cadastrar-se</a>
+                    <a href="login.html">Login</a>
+                    <a href="faq.html">Perguntas Frequentes</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Para empresas</h4>
+                    <a href="#">Publicar oportunidade</a>
+                    <a href="#">Planos e preços</a>
+                    <a href="#">Como contratar</a>
+                    <a href="#">Fale com vendas</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 UniLink. Todos os direitos reservados.
+                </p>
+                <p>
+                    Feito com
+                    <i class='bx bx-heart'></i>
+                    para transformar vidas através da educação.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/marketing/faq.js"></script>
+</body>
+</html>

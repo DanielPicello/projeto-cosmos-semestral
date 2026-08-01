@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha seu Painel | UniLink</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard/dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class='bx bxs-layer'></i>
+                </div>
+                <span >Uni<span style="color:#2563EB">Link</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professores.html">Encontrar Professores</a></li>
+                <li><a href="empresas.html">Empresas</a></li>
+                <li><a href="#">Como Funciona</a></li>
+                <li><a href="faq.html">Sobre</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">
+                    <i class='bx bx-log-in' style='color:#0e0e0e'></i>
+                    Login
+                </button>
+                <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class='bx bx-menu'></i>
+            </button>
+            <div class="mobile-menu" id="mobileMenu">
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="professores.html">Encontrar Professores</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="#">Como Funciona</a></li>
+                    <li><a href="faq.html">Sobre</a></li>
+                </ul>
+                <div class="mobile-nav-buttons">
+                    <button class="btn-login" onclick="window.location.href='login.html'">
+                        <i class='bx bx-log-in'></i>
+                        Login
+                    </button>
+                    <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="dash-select">
+            <div class="dash-container">
+                <span class="dash-eyebrow">Escolha seu painel</span>
+                <h1>Qual dashboard você quer abrir?</h1>
+                <p>Cada perfil tem uma experiência dedicada com métricas, agenda e ferramentas específicas.</p>
+                <div class="dash-grid">
+                    <article class="dash-card dash-card-aluno">
+                        <div class="dash-card-top">
+                            <div class="dash-icon">
+                                <i class='bx bx-user'></i>
+                            </div>
+                            <h3>Sou Aluno</h3>
+                        </div>
+                        <div class="dash-card-body">
+                            <p>Acompanhe aulas contratadas, tarefas, favoritos e mensagens com professores.</p>
+                            <a href="painel-aluno.html" class="dash-btn">
+                                Abrir painel
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="dash-card dash-card-professor">
+                        <div class="dash-card-top">
+                            <div class="dash-icon">
+                                <i class='bx bxs-graduation'></i>
+                            </div>
+                            <h3>Sou Professor</h3>
+                        </div>
+                        <div class="dash-card-body">
+                            <p>Gerencie sua agenda, ganhos, alunos e propostas de empresas.</p>
+                            <a href="painel-professor.html" class="dash-btn">
+                                Abrir painel
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="dash-card dash-card-empresa">
+                        <div class="dash-card-top">
+                            <div class="dash-icon">
+                                <i class='bx bx-briefcase'></i>
+                            </div>
+                            <h3>Sou Empresa</h3>
+                        </div>
+                        <div class="dash-card-body">
+                            <p>Publique vagas e projetos, veja candidatos e contrate universitários.</p>
+                            <a href="painel-empresa.html" class="dash-btn">
+                                Abrir painel
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class='bx bxs-layer'></i>
+                        </div>
+                        <span>UniLink</span>
+                    </a>
+                    <p>
+                        Conectando universitários, alunos e empresas para um futuro com mais conhecimento e oportunidades.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <a href="index.html">Home</a>
+                    <a href="professores.html">Encontrar Professores</a>
+                    <a href="empresas.html">Empresas</a>
+                    <a href="#">Como Funciona</a>
+                    <a href="faq.html">Sobre</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Para usuários</h4>
+                    <a href="register.html">Cadastrar-se</a>
+                    <a href="login.html">Login</a>
+                    <a href="faq.html">Perguntas Frequentes</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Para empresas</h4>
+                    <a href="#">Publicar oportunidade</a>
+                    <a href="#">Planos e preços</a>
+                    <a href="#">Como contratar</a>
+                    <a href="#">Fale com vendas</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 UniLink. Todos os direitos reservados.
+                </p>
+                <p>
+                    Feito com
+                    <i class='bx bx-heart'></i>
+                    para transformar vidas através da educação.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/dashboard/dashboard.js"></script>
+</body>
+</html>

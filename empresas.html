@@ -5,20 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Empresas | UniLink</title>
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/empresas.css">
+        <link rel="stylesheet" href="css/marketing/empresas.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <header id="header">
                 <nav class="navbar">
-                    <div class="logo">
+                    <a href="index.html" class="logo">
                         <div class="logo-icon">
-                            <!-- <i class='bx bxs-layer'></i> -->
+                            <i class='bx bxs-layer'></i>
                         </div>
-                        <span>UniLink</span>
-                    </div>
+                        <span >Uni<span style="color:#2563EB">Link</span></span>
+                    </a>
                     <ul class="nav-links">
-                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="professores.html">Encontrar Professores</a></li>
                         <li><a href="empresas.html">Empresas</a></li>
                         <li><a href="#">Como Funciona</a></li>
@@ -26,10 +26,29 @@
                     </ul>
                     <div class="nav-buttons">
                         <button class="btn-login" onclick="window.location.href='login.html'">
-                            <i class='bx bx-log-in' style='color:#0e0e0e' ></i>
+                            <i class='bx bx-log-in' style='color:#0e0e0e'></i>
                             Login
                         </button>
-                        <button class="btn-register">Cadastre-se</button>
+                        <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+                    </div>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                    <div class="mobile-menu" id="mobileMenu">
+                        <ul class="mobile-nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="professores.html">Encontrar Professores</a></li>
+                            <li><a href="empresas.html">Empresas</a></li>
+                            <li><a href="#">Como Funciona</a></li>
+                            <li><a href="#">Sobre</a></li>
+                        </ul>
+                        <div class="mobile-nav-buttons">
+                            <button class="btn-login" onclick="window.location.href='login.html'">
+                                <i class='bx bx-log-in'></i>
+                                Login
+                            </button>
+                            <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+                        </div>
                     </div>
                 </nav>
             </header>
@@ -43,17 +62,15 @@
                             </p>
                         </div>
                         <div class="hero-right">
-                            <a href="#" class="publish-btn">
+                            <a href="register.html" class="publish-btn">
                                 <i class='bx bx-paper-plane'></i>
                                 Publicar oportunidade
                             </a>
                         </div>
                     </div>
                 </section>
-                <!-- VAGAS -->
                 <section class="jobs">
                     <div class="jobs-container">
-                        <!-- CARD 1 -->
                         <article class="job-card">
                             <div class="company">
                                 <div class="company-icon">
@@ -68,7 +85,6 @@
                                 <span class="primary">Freelance</span>
                                 <span>React</span>
                                 <span>TypeScript</span>
-                                <span>Tailwind</span>
                             </div>
                             <div class="details">
                                 <span>
@@ -83,7 +99,6 @@
                             <h2>R$ 3.000 - 5.000</h2>
                             <button>Candidatar-se</button>
                         </article>
-                        <!-- CARD 2 -->
                         <article class="job-card">
                             <div class="company">
                                 <div class="company-icon">
@@ -112,7 +127,6 @@
                             <h2>R$ 1.800</h2>
                             <button>Candidatar-se</button>
                         </article>
-                        <!-- CARD 3 -->
                         <article class="job-card">
                             <div class="company">
                                 <div class="company-icon">
@@ -142,7 +156,6 @@
                             <h2>R$ 4.500</h2>
                             <button>Candidatar-se</button>
                         </article>
-                        <!-- CARD 4 -->
                         <article class="job-card">
                             <div class="company">
                                 <div class="company-icon">
@@ -171,7 +184,6 @@
                             <h2>R$ 3.500</h2>
                             <button>Candidatar-se</button>
                         </article>
-                        <!-- CARD 5 -->
                         <article class="job-card">
                             <div class="company">
                                 <div class="company-icon">
@@ -200,7 +212,6 @@
                             <h2>R$ 2.800</h2>
                             <button>Candidatar-se</button>
                         </article>
-                        <!-- CARD 6 -->
                         <article class="job-card">
                             <div class="company">
                                 <div class="company-icon">
@@ -238,7 +249,7 @@
                         <div class="footer-brand">
                             <a href="#" class="footer-logo">
                                 <div class="footer-logo-icon">
-                                    <i class="fa-solid fa-layer-group"></i>
+                                    <i class='bx bxs-layer'></i>
                                 </div>
                                 <span>UniLink</span>
                             </a>
@@ -262,10 +273,9 @@
                         </div>
                         <div class="footer-links">
                             <h4>Para usuários</h4>
-                            <a href="#">Cadastrar-se</a>
+                            <a href="register.html">Cadastrar-se</a>
                             <a href="login.html">Login</a>
-                            <a href="#">Central de Ajuda</a>
-                            <a href="#">Perguntas Frequentes</a>
+                            <a href="faq.html">Perguntas Frequentes</a>
                         </div>
                         <div class="footer-links">
                             <h4>Para empresas</h4>

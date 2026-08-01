@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Professor | UniLink</title>
+    <link rel="stylesheet" href="css/dashboard/painel.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="panel-body">
+    <aside class="panel-sidebar" id="panelSidebar" data-panel="professor">
+        <div class="panel-logo-block">
+            <a href="index.html" class="panel-logo">
+                <div class="panel-logo-icon">
+                    <i class='bx bxs-layer'></i>
+                </div>
+                <span class="panel-logo-text">Uni<span>Link</span></span>
+            </a>
+        </div>
+        <nav class="panel-nav" id="panelNav"></nav>
+        <div class="panel-sidebar-bottom">
+            <a href="#" class="panel-nav-link">
+                <i class='bx bx-cog'></i>
+                <span>Configurações</span>
+            </a>
+            <a href="faq.html" class="panel-nav-link">
+                <i class='bx bx-help-circle'></i>
+                <span>Ajuda</span>
+            </a>
+            <a href="index.html" class="panel-nav-link panel-logout">
+                <i class='bx bx-log-out'></i>
+                <span>Sair</span>
+            </a>
+        </div>
+    </aside>
+    <div class="panel-overlay" id="panelOverlay"></div>
+    <div class="panel-main">
+        <header class="panel-topbar">
+            <button class="panel-toggle-btn" id="sidebarToggle" aria-label="Abrir/fechar menu">
+                <i class='bx bx-dock-left'></i>
+            </button>
+            <div class="panel-search">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Buscar aulas, alunos, vagas...">
+            </div>
+            <div class="panel-topbar-actions">
+                <button class="panel-icon-btn" aria-label="Notificações">
+                    <i class='bx bx-bell'></i>
+                </button>
+                <div class="panel-avatar">PL</div>
+            </div>
+        </header>
+        <main class="panel-content">
+            <section class="panel-hero">
+                <div class="panel-hero-top">
+                    <div class="panel-hero-left">
+                        <span class="panel-chip">
+                            <i class='bx bx-grid-alt'></i>
+                            Painel
+                        </span>
+                        <h1>Bem-vindo, Prof. Lucas</h1>
+                        <p>Gerencie sua rotina de aulas e amplie sua renda.</p>
+                    </div>
+                    <button class="panel-hero-btn">
+                        <i class='bx bx-plus'></i>
+                        Nova disponibilidade
+                    </button>
+                </div>
+                <div class="panel-tabs">
+                    <a href="painel-aluno.html" class="panel-tab">
+                        <i class='bx bx-user'></i>
+                        Aluno
+                    </a>
+                    <a href="painel-professor.html" class="panel-tab active">
+                        <i class='bx bxs-graduation'></i>
+                        Professor
+                    </a>
+                    <a href="painel-empresa.html" class="panel-tab">
+                        <i class='bx bx-briefcase'></i>
+                        Empresa
+                    </a>
+                </div>
+            </section>
+            <section class="panel-stats">
+                <div class="panel-stat-card">
+                    <div class="panel-stat-icon panel-icon-blue">
+                        <i class='bx bx-calendar'></i>
+                    </div>
+                    <span class="panel-stat-label">Aulas este mês</span>
+                    <strong class="panel-stat-value">18</strong>
+                    <span class="panel-stat-delta panel-delta-up">+22%</span>
+                </div>
+                <div class="panel-stat-card">
+                    <div class="panel-stat-icon panel-icon-green">
+                        <i class='bx bx-wallet'></i>
+                    </div>
+                    <span class="panel-stat-label">Ganhos</span>
+                    <strong class="panel-stat-value">R$ 3.240</strong>
+                    <span class="panel-stat-delta panel-delta-up">+18%</span>
+                </div>
+                <div class="panel-stat-card">
+                    <div class="panel-stat-icon panel-icon-orange">
+                        <i class='bx bx-group'></i>
+                    </div>
+                    <span class="panel-stat-label">Alunos ativos</span>
+                    <strong class="panel-stat-value">12</strong>
+                    <span class="panel-stat-delta panel-delta-up">+2 novos</span>
+                </div>
+                <div class="panel-stat-card">
+                    <div class="panel-stat-icon panel-icon-blue">
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <span class="panel-stat-label">Avaliação</span>
+                    <strong class="panel-stat-value">4.9</strong>
+                    <span class="panel-stat-delta">248 reviews</span>
+                </div>
+            </section>
+            <section class="panel-grid-2">
+                <div class="panel-card">
+                    <div class="panel-card-header">
+                        <h2>Próximas aulas</h2>
+                        <a href="#" class="panel-link">Ver agenda completa</a>
+                    </div>
+                    <div class="panel-lesson-list">
+                        <div class="panel-lesson">
+                            <img src="img/professores/teacher-1.jpg" alt="Ana Carolina" class="panel-avatar-img">
+                            <div class="panel-lesson-info">
+                                <h4>Ana Carolina</h4>
+                                <span>Cálculo I · Hoje, 19:00</span>
+                            </div>
+                            <span class="panel-lesson-price">R$ 80</span>
+                            <span class="panel-badge panel-badge-online">
+                                <i class='bx bx-video'></i>
+                                Online
+                            </span>
+                        </div>
+                        <div class="panel-lesson">
+                            <img src="img/professores/teacher-2.jpg" alt="Rafael Mota" class="panel-avatar-img">
+                            <div class="panel-lesson-info">
+                                <h4>Rafael Mota</h4>
+                                <span>Programação Web · Amanhã, 15:00</span>
+                            </div>
+                            <span class="panel-lesson-price">R$ 90</span>
+                            <span class="panel-badge panel-badge-online">
+                                <i class='bx bx-video'></i>
+                                Online
+                            </span>
+                        </div>
+                        <div class="panel-lesson">
+                            <img src="img/professores/teacher-3.jpg" alt="Beatriz Lima" class="panel-avatar-img">
+                            <div class="panel-lesson-info">
+                                <h4>Beatriz Lima</h4>
+                                <span>Física II · Sex, 10:00</span>
+                            </div>
+                            <span class="panel-lesson-price">R$ 120</span>
+                            <span class="panel-badge panel-badge-presencial">
+                                <i class='bx bx-map'></i>
+                                Presencial
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-card">
+                    <div class="panel-card-header">
+                        <h2>Agenda</h2>
+                    </div>
+                    <div class="panel-calendar">
+                        <span class="panel-calendar-month">Agosto de 2026</span>
+
+                        <div class="panel-calendar-grid panel-calendar-weekdays">
+                            <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+                        </div>
+                        <div class="panel-calendar-grid panel-calendar-days">
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-today">1</span>
+                            <span class="panel-day panel-day-marked">2</span>
+                            <span class="panel-day">3</span>
+                            <span class="panel-day">4</span>
+                            <span class="panel-day panel-day-marked">5</span>
+                            <span class="panel-day">6</span>
+                            <span class="panel-day">7</span>
+                            <span class="panel-day panel-day-marked">8</span>
+                            <span class="panel-day">9</span>
+                            <span class="panel-day">10</span>
+                            <span class="panel-day">11</span>
+                            <span class="panel-day">12</span>
+                            <span class="panel-day">13</span>
+                            <span class="panel-day">14</span>
+                            <span class="panel-day">15</span>
+                            <span class="panel-day">16</span>
+                            <span class="panel-day">17</span>
+                            <span class="panel-day">18</span>
+                            <span class="panel-day">19</span>
+                            <span class="panel-day">20</span>
+                            <span class="panel-day">21</span>
+                            <span class="panel-day">22</span>
+                            <span class="panel-day">23</span>
+                            <span class="panel-day">24</span>
+                            <span class="panel-day">25</span>
+                            <span class="panel-day">26</span>
+                            <span class="panel-day">27</span>
+                            <span class="panel-day">28</span>
+                            <span class="panel-day">29</span>
+                            <span class="panel-day">30</span>
+                            <span class="panel-day">31</span>
+                        </div>
+                        <div class="panel-bars-wrap">
+                            <span class="panel-bars-title">Horas confirmadas na semana</span>
+                            <div class="panel-bars">
+                                <div class="panel-bar-col">
+                                    <div class="panel-bar" style="height:42%"></div>
+                                    <span>D</span>
+                                </div>
+                                <div class="panel-bar-col">
+                                    <div class="panel-bar" style="height:72%"></div>
+                                    <span>S</span>
+                                </div>
+                                <div class="panel-bar-col">
+                                    <div class="panel-bar" style="height:34%"></div>
+                                    <span>T</span>
+                                </div>
+                                <div class="panel-bar-col">
+                                    <div class="panel-bar" style="height:56%"></div>
+                                    <span>Q</span>
+                                </div>
+                                <div class="panel-bar-col">
+                                    <div class="panel-bar" style="height:88%"></div>
+                                    <span>Q</span>
+                                </div>
+                                <div class="panel-bar-col">
+                                    <div class="panel-bar" style="height:24%"></div>
+                                    <span>S</span>
+                                </div>
+                                <div class="panel-bar-col">
+                                    <div class="panel-bar" style="height:12%"></div>
+                                    <span>S</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="panel-grid-3">
+                <div class="panel-card">
+                    <div class="panel-card-header">
+                        <h2>Ganhos do mês</h2>
+                    </div>
+                    <strong class="panel-earn-value">R$ 3.240</strong>
+                    <span class="panel-earn-goal">de R$ 4.000 (meta mensal)</span>
+                    <div class="panel-progress-track panel-earn-track">
+                        <div class="panel-progress-fill" style="width:81%"></div>
+                    </div>
+                    <div class="panel-earn-breakdown">
+                        <div class="panel-earn-row">
+                            <span>Aulas particulares</span>
+                            <strong>R$ 2.100</strong>
+                        </div>
+                        <div class="panel-earn-row">
+                            <span>Projetos empresas</span>
+                            <strong>R$ 940</strong>
+                        </div>
+                        <div class="panel-earn-row">
+                            <span>Bônus e avaliações</span>
+                            <strong>R$ 200</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-card">
+                    <div class="panel-card-header">
+                        <h2>Mensagens recentes</h2>
+                        <a href="#" class="panel-link">3 novas</a>
+                    </div>
+                    <div class="panel-message-list">
+                        <div class="panel-message">
+                            <img src="img/professores/teacher-1.jpg" alt="Ana Carolina" class="panel-avatar-img">
+                            <div class="panel-message-info">
+                                <h4>Ana Carolina</h4>
+                                <p>Posso remarcar quinta?</p>
+                            </div>
+                            <div class="panel-message-meta">
+                                <span>5min</span>
+                                <span class="panel-badge-count">2</span>
+                            </div>
+                        </div>
+                        <div class="panel-message">
+                            <img src="img/professores/teacher-2.jpg" alt="Rafael Mota" class="panel-avatar-img">
+                            <div class="panel-message-info">
+                                <h4>Rafael Mota</h4>
+                                <p>Obrigado pela aula!</p>
+                            </div>
+                            <div class="panel-message-meta">
+                                <span>2h</span>
+                            </div>
+                        </div>
+                        <div class="panel-message">
+                            <img src="img/professores/teacher-3.jpg" alt="Beatriz Lima" class="panel-avatar-img">
+                            <div class="panel-message-info">
+                                <h4>Beatriz Lima</h4>
+                                <p>Vou enviar o material.</p>
+                            </div>
+                            <div class="panel-message-meta">
+                                <span>ontem</span>
+                                <span class="panel-badge-count">1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-card">
+                    <div class="panel-card-header">
+                        <h2>Oportunidades para você</h2>
+                        <a href="empresas.html" class="panel-link">Ver todas</a>
+                    </div>
+                    <div class="panel-opp-list">
+                        <div class="panel-opp">
+                            <div class="panel-opp-icon">
+                                <i class='bx bx-briefcase'></i>
+                            </div>
+                            <div class="panel-opp-info">
+                                <span>Innovate</span>
+                                <h4>Dev Front-end Jr.</h4>
+                                <div class="panel-opp-price">
+                                    <i class='bx bx-trending-up'></i>
+                                    R$ 3-5k
+                                </div>
+                            </div>
+                            <a href="empresas.html" class="panel-btn-outline panel-btn-sm">Ver</a>
+                        </div>
+                        <div class="panel-opp">
+                            <div class="panel-opp-icon">
+                                <i class='bx bx-briefcase'></i>
+                            </div>
+                            <div class="panel-opp-info">
+                                <span>DataPeak</span>
+                                <h4>Analista de Dados</h4>
+                                <div class="panel-opp-price">
+                                    <i class='bx bx-trending-up'></i>
+                                    R$ 4.5k
+                                </div>
+                            </div>
+                            <a href="empresas.html" class="panel-btn-outline panel-btn-sm">Ver</a>
+                        </div>
+                        <div class="panel-opp">
+                            <div class="panel-opp-icon">
+                                <i class='bx bx-briefcase'></i>
+                            </div>
+                            <div class="panel-opp-info">
+                                <span>EduTech</span>
+                                <h4>Criador de conteúdo</h4>
+                                <div class="panel-opp-price">
+                                    <i class='bx bx-trending-up'></i>
+                                    R$ 80/h
+                                </div>
+                            </div>
+                            <a href="empresas.html" class="panel-btn-outline panel-btn-sm">Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/dashboard/painel.js"></script>
+</body>
+</html>

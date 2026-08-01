@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Empresa | UniLink</title>
+    <link rel="stylesheet" href="css/dashboard/painel.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="panel-body">
+    <aside class="panel-sidebar" id="panelSidebar" data-panel="empresa">
+        <div class="panel-logo-block">
+            <a href="index.html" class="panel-logo">
+                <div class="panel-logo-icon">
+                    <i class='bx bxs-layer'></i>
+                </div>
+                <span class="panel-logo-text">Uni<span>Link</span></span>
+            </a>
+        </div>
+        <nav class="panel-nav" id="panelNav"></nav>
+        <div class="panel-sidebar-bottom">
+            <a href="#" class="panel-nav-link">
+                <i class='bx bx-cog'></i>
+                <span>Configurações</span>
+            </a>
+            <a href="faq.html" class="panel-nav-link">
+                <i class='bx bx-help-circle'></i>
+                <span>Ajuda</span>
+            </a>
+            <a href="index.html" class="panel-nav-link panel-logout">
+                <i class='bx bx-log-out'></i>
+                <span>Sair</span>
+            </a>
+        </div>
+    </aside>
+    <div class="panel-overlay" id="panelOverlay"></div>
+    <div class="panel-main">
+        <header class="panel-topbar">
+            <button class="panel-toggle-btn" id="sidebarToggle" aria-label="Abrir/fechar menu">
+                <i class='bx bx-dock-left'></i>
+            </button>
+            <div class="panel-search">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Buscar candidatos, vagas...">
+            </div>
+            <div class="panel-topbar-actions">
+                <button class="panel-icon-btn" aria-label="Notificações">
+                    <i class='bx bx-bell'></i>
+                </button>
+                <div class="panel-avatar">IT</div>
+            </div>
+        </header>
+        <main class="panel-content">
+            <section class="panel-hero">
+                <div class="panel-hero-top">
+                    <div class="panel-hero-left">
+                        <span class="panel-chip">
+                            <i class='bx bx-grid-alt'></i>
+                            Painel
+                        </span>
+                        <h1>Innovate Tecnologia</h1>
+                        <p>Encontre talentos universitários para projetos e vagas.</p>
+                    </div>
+                    <button class="panel-hero-btn">
+                        <i class='bx bx-plus'></i>
+                        Publicar vaga
+                    </button>
+                </div>
+                <div class="panel-tabs">
+                    <a href="painel-aluno.html" class="panel-tab">
+                        <i class='bx bx-user'></i>
+                        Aluno
+                    </a>
+                    <a href="painel-professor.html" class="panel-tab">
+                        <i class='bx bxs-graduation'></i>
+                        Professor
+                    </a>
+                    <a href="painel-empresa.html" class="panel-tab active">
+                        <i class='bx bx-briefcase'></i>
+                        Empresa
+                    </a>
+                </div>
+            </section>
+            <section class="panel-stats">
+                <div class="panel-stat-card">
+                    <div class="panel-stat-icon panel-icon-blue">
+                        <i class='bx bx-briefcase'></i>
+                    </div>
+                    <span class="panel-stat-label">Vagas ativas</span>
+                    <strong class="panel-stat-value">5</strong>
+                    <span class="panel-stat-delta panel-delta-up">+2 este mês</span>
+                </div>
+                <div class="panel-stat-card">
+                    <div class="panel-stat-icon panel-icon-green">
+                        <i class='bx bx-group'></i>
+                    </div>
+                    <span class="panel-stat-label">Candidatos</span>
+                    <strong class="panel-stat-value">87</strong>
+                    <span class="panel-stat-delta panel-delta-up">+34 na semana</span>
+                </div>
+                <div class="panel-stat-card">
+                    <div class="panel-stat-icon panel-icon-orange">
+                        <i class='bx bx-show'></i>
+                    </div>
+                    <span class="panel-stat-label">Visualizações</span>
+                    <strong class="panel-stat-value">1.2k</strong>
+                    <span class="panel-stat-delta panel-delta-up">+18%</span>
+                </div>
+                <div class="panel-stat-card">
+                    <div class="panel-stat-icon panel-icon-blue">
+                        <i class='bx bx-check-circle'></i>
+                    </div>
+                    <span class="panel-stat-label">Contratações</span>
+                    <strong class="panel-stat-value">4</strong>
+                    <span class="panel-stat-delta">Meta trimestral: 8</span>
+                </div>
+            </section>
+            <section class="panel-grid-2">
+                <div class="panel-card">
+                    <div class="panel-card-header">
+                        <h2>Minhas vagas</h2>
+                        <button class="panel-filter-btn">
+                            <i class='bx bx-filter-alt'></i>
+                            Filtrar
+                        </button>
+                    </div>
+                    <div class="panel-table-wrap">
+                        <table class="panel-table">
+                            <thead>
+                                <tr>
+                                    <th>Vaga</th>
+                                    <th>Modelo</th>
+                                    <th>Candidatos</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="panel-table-title">Dev Front-end Jr.</td>
+                                    <td><i class='bx bx-map'></i> Remoto</td>
+                                    <td>23</td>
+                                    <td><span class="panel-status panel-status-ativa">Ativa</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="panel-table-title">Analista de Dados</td>
+                                    <td><i class='bx bx-map'></i> Híbrido · SP</td>
+                                    <td>41</td>
+                                    <td><span class="panel-status panel-status-ativa">Ativa</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="panel-table-title">Estagiário de UX</td>
+                                    <td><i class='bx bx-map'></i> Presencial · RJ</td>
+                                    <td>18</td>
+                                    <td><span class="panel-status panel-status-ativa">Ativa</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="panel-table-title">Tutor de Excel Avançado</td>
+                                    <td><i class='bx bx-map'></i> Remoto</td>
+                                    <td>5</td>
+                                    <td><span class="panel-status panel-status-pausada">Pausada</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="panel-card">
+                    <div class="panel-card-header">
+                        <h2>Entrevistas agendadas</h2>
+                    </div>
+                    <div class="panel-calendar">
+                        <span class="panel-calendar-month">Agosto de 2026</span>
+                        <div class="panel-calendar-grid panel-calendar-weekdays">
+                            <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+                        </div>
+                        <div class="panel-calendar-grid panel-calendar-days">
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-empty"></span>
+                            <span class="panel-day panel-day-today">1</span>
+                            <span class="panel-day panel-day-marked">2</span>
+                            <span class="panel-day">3</span>
+                            <span class="panel-day panel-day-marked">4</span>
+                            <span class="panel-day">5</span>
+                            <span class="panel-day panel-day-marked">6</span>
+                            <span class="panel-day">7</span>
+                            <span class="panel-day">8</span>
+                            <span class="panel-day">9</span>
+                            <span class="panel-day">10</span>
+                            <span class="panel-day">11</span>
+                            <span class="panel-day">12</span>
+                            <span class="panel-day">13</span>
+                            <span class="panel-day">14</span>
+                            <span class="panel-day">15</span>
+                            <span class="panel-day">16</span>
+                            <span class="panel-day">17</span>
+                            <span class="panel-day">18</span>
+                            <span class="panel-day">19</span>
+                            <span class="panel-day">20</span>
+                            <span class="panel-day">21</span>
+                            <span class="panel-day">22</span>
+                            <span class="panel-day">23</span>
+                            <span class="panel-day">24</span>
+                            <span class="panel-day">25</span>
+                            <span class="panel-day">26</span>
+                            <span class="panel-day">27</span>
+                            <span class="panel-day">28</span>
+                            <span class="panel-day">29</span>
+                            <span class="panel-day">30</span>
+                            <span class="panel-day">31</span>
+                        </div>
+                        <div class="panel-calendar-legend">
+                            <span><i class='bx bx-time-five'></i> Amanhã 10h — Rafael (Front-end)</span>
+                            <span><i class='bx bx-time-five'></i> Qui 14h — Beatriz (Dados)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="panel-grid-2">
+                <div class="panel-card">
+                    <div class="panel-card-header">
+                        <h2>Candidatos em destaque</h2>
+                        <a href="#" class="panel-link">Ver todos</a>
+                    </div>
+                    <div class="panel-candidates-grid">
+                        <div class="panel-candidate">
+                            <img src="img/professores/teacher-1.jpg" alt="Ana Carolina" class="panel-avatar-img">
+                            <div class="panel-candidate-info">
+                                <h4>Ana Carolina</h4>
+                                <span>USP · Eng. Comp. · Front-end</span>
+                            </div>
+                            <div class="panel-match">
+                                <strong>92%</strong>
+                                <span>match</span>
+                            </div>
+                        </div>
+                        <div class="panel-candidate">
+                            <img src="img/professores/teacher-2.jpg" alt="Rafael Mota" class="panel-avatar-img">
+                            <div class="panel-candidate-info">
+                                <h4>Rafael Mota</h4>
+                                <span>UFMG · Sistemas · Front-end</span>
+                            </div>
+                            <div class="panel-match">
+                                <strong>88%</strong>
+                                <span>match</span>
+                            </div>
+                        </div>
+                        <div class="panel-candidate">
+                            <img src="img/professores/teacher-3.jpg" alt="Beatriz Lima" class="panel-avatar-img">
+                            <div class="panel-candidate-info">
+                                <h4>Beatriz Lima</h4>
+                                <span>UFRJ · Estatística · Dados</span>
+                            </div>
+                            <div class="panel-match">
+                                <strong>85%</strong>
+                                <span>match</span>
+                            </div>
+                        </div>
+                        <div class="panel-candidate">
+                            <img src="img/professores/teacher-4.jpg" alt="Camila Ribeiro" class="panel-avatar-img">
+                            <div class="panel-candidate-info">
+                                <h4>Camila Ribeiro</h4>
+                                <span>Unicamp · Design · UX</span>
+                            </div>
+                            <div class="panel-match">
+                                <strong>81%</strong>
+                                <span>match</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-card">
+                    <div class="panel-card-header">
+                        <h2>Mensagens</h2>
+                        <a href="#" class="panel-link">2 novas</a>
+                    </div>
+                    <div class="panel-message-list">
+                        <div class="panel-message">
+                            <img src="img/professores/teacher-2.jpg" alt="Rafael Mota" class="panel-avatar-img">
+                            <div class="panel-message-info">
+                                <h4>Rafael Mota</h4>
+                                <p>Posso mandar meu portfólio?</p>
+                            </div>
+                            <div class="panel-message-meta">
+                                <span>15min</span>
+                                <span class="panel-badge-count">1</span>
+                            </div>
+                        </div>
+                        <div class="panel-message">
+                            <img src="img/professores/teacher-3.jpg" alt="Beatriz Lima" class="panel-avatar-img">
+                            <div class="panel-message-info">
+                                <h4>Beatriz Lima</h4>
+                                <p>Confirmo entrevista quinta.</p>
+                            </div>
+                            <div class="panel-message-meta">
+                                <span>1h</span>
+                                <span class="panel-badge-count">1</span>
+                            </div>
+                        </div>
+                        <div class="panel-message">
+                            <img src="img/professores/teacher-1.jpg" alt="Ana Carolina" class="panel-avatar-img">
+                            <div class="panel-message-info">
+                                <h4>Ana Carolina</h4>
+                                <p>Obrigada pela oportunidade!</p>
+                            </div>
+                            <div class="panel-message-meta">
+                                <span>ontem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/dashboard/painel.js"></script>
+</body>
+</html>

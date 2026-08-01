@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - UniLink</title>
+    <title>Cadastro | UniLink</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/auth/register.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header id="header">
-        <nav class="navbar">
-            <div class="logo">
+         <nav class="navbar">
+            <a href="index.html" class="logo">
                 <div class="logo-icon">
-                    <!-- <i class='bx bxs-layer'></i> -->
+                    <i class='bx bxs-layer'></i>
                 </div>
-                <span>UniLink</span>
-            </div>
+                <span >Uni<span style="color:#2563EB">Link</span></span>
+            </a>
             <ul class="nav-links">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="professores.html">Encontrar Professores</a></li>
                 <li><a href="empresas.html">Empresas</a></li>
                 <li><a href="#">Como Funciona</a></li>
@@ -26,37 +26,67 @@
             </ul>
             <div class="nav-buttons">
                 <button class="btn-login" onclick="window.location.href='login.html'">
-                    <i class='bx bx-log-in' style='color:#0e0e0e' ></i>
+                    <i class='bx bx-log-in' style='color:#0e0e0e'></i>
                     Login
                 </button>
-                <button class="btn-register">Cadastre-se</button>
+                <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class='bx bx-menu'></i>
+            </button>
+            <div class="mobile-menu" id="mobileMenu">
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="professores.html">Encontrar Professores</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="#">Como Funciona</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+                <div class="mobile-nav-buttons">
+                    <button class="btn-login" onclick="window.location.href='login.html'">
+                        <i class='bx bx-log-in'></i>
+                        Login
+                    </button>
+                    <button class="btn-register" onclick="window.location.href='register.html'">Cadastre-se</button>
+                </div>
             </div>
         </nav>
     </header>
     <main class="register-page">
         <div class="register-container">
+
             <div class="register-steps">
-                <div class="register-step active">
-                    <div class="register-step-circle">1</div>
+                <div class="register-step active" data-step="1">
+                    <div class="register-step-circle">
+                        <span class="step-number">1</span>
+                        <i class='bx bx-check step-check'></i>
+                    </div>
                     <span>Tipo de conta</span>
                 </div>
                 <div class="register-line"></div>
-                <div class="register-step">
-                    <div class="register-step-circle">2</div>
+                <div class="register-step" data-step="2">
+                    <div class="register-step-circle">
+                        <span class="step-number">2</span>
+                        <i class='bx bx-check step-check'></i>
+                    </div>
                     <span>Dados básicos</span>
                 </div>
                 <div class="register-line"></div>
-                <div class="register-step">
-                    <div class="register-step-circle">3</div>
+                <div class="register-step" data-step="3">
+                    <div class="register-step-circle">
+                        <span class="step-number">3</span>
+                        <i class='bx bx-check step-check'></i>
+                    </div>
                     <span>Perfil</span>
                 </div>
             </div>
             <div class="register-card">
-                <h1 class="register-title">Quem é você?</h1>
-                <p class="register-subtitle">
-                    Escolha o tipo de conta para começar.
-                </p>
-                <div class="register-options">
+                <div class="register-panel" data-step-panel="1">
+                    <h1 class="register-title">Quem é você?</h1>
+                    <p class="register-subtitle">
+                        Escolha o tipo de conta para começar.
+                    </p>
+                    <div class="register-options">
                         <div class="register-option selected" data-type="student">
                             <div class="register-icon">
                                 <i class='bx bx-book-open'></i>
@@ -82,17 +112,124 @@
                                 Quero contratar talentos universitários para minha empresa.
                             </p>
                         </div>
+                    </div>
+                    <div class="register-footer">
+                        <button class="register-button" id="step1-continue" disabled>
+                            Continuar
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
                 </div>
-                <div class="register-footer">
-                    <button class="register-button" disabled>
-                        Continuar
-                        <i class='bx bx-right-arrow-alt'></i>
-                    </button>
+                <div class="register-panel" data-step-panel="2" style="display:none">
+                    <h1 class="register-title">Dados básicos</h1>
+                    <p class="register-subtitle">
+                        Vamos criar sua conta.
+                    </p>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label data-field="name-label">Nome completo</label>
+                            <input type="text" data-field="name-input" placeholder="Ex: Maria Silva">
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="voce@exemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Senha</label>
+                            <input type="password" placeholder="••••••••">
+                        </div>
+                        <div class="form-group">
+                            <label>Confirmar senha</label>
+                            <input type="password" placeholder="••••••••">
+                        </div>
+                    </div>
+                    <div class="register-footer register-footer-split">
+                        <button class="register-back-btn" data-back>
+                            <i class='bx bx-left-arrow-alt'></i>
+                            Voltar
+                        </button>
+                        <button class="register-button" data-next="3">
+                            Continuar
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="register-panel" data-step-panel="3" style="display:none">
+                    <h1 class="register-title">Sobre você</h1>
+                    <p class="register-subtitle">
+                        Conte um pouco para personalizar seu perfil.
+                    </p>
+                    <div class="form-grid" data-profile-fields="student" style="display:none">
+                        <div class="form-group">
+                            <label>Nível de ensino</label>
+                            <input type="text" placeholder="Ex: Ensino Médio">
+                        </div>
+                        <div class="form-group">
+                            <label>Cidade</label>
+                            <input type="text" placeholder="Ex: São Paulo">
+                        </div>
+                    </div>
+                    <div class="form-grid" data-profile-fields="teacher" style="display:none">
+                        <div class="form-group">
+                            <label>Universidade</label>
+                            <input type="text" placeholder="Ex: USP">
+                        </div>
+                        <div class="form-group">
+                            <label>Curso</label>
+                            <input type="text" placeholder="Ex: Engenharia Civil">
+                        </div>
+                        <div class="form-group">
+                            <label>Período</label>
+                            <input type="text" placeholder="Ex: 5º">
+                        </div>
+                        <div class="form-group">
+                            <label>Valor por hora (R$)</label>
+                            <input type="text" placeholder="60">
+                        </div>
+                        <div class="form-group form-group-full">
+                            <label>Matérias que ensina</label>
+                            <input type="text" placeholder="Ex: Matemática, Cálculo, Física">
+                        </div>
+                    </div>
+                    <div class="form-grid" data-profile-fields="company" style="display:none">
+                        <div class="form-group">
+                            <label>CNPJ</label>
+                            <input type="text" placeholder="00.000.000/0000-00">
+                        </div>
+                        <div class="form-group">
+                            <label>Setor</label>
+                            <input type="text" placeholder="Ex: Tecnologia">
+                        </div>
+                        <div class="form-group">
+                            <label>Site</label>
+                            <input type="text" placeholder="https://">
+                        </div>
+                        <div class="form-group">
+                            <label>Tamanho</label>
+                            <input type="text" placeholder="Ex: 10-50 funcionários">
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-full" style="margin-bottom:28px">
+                        <label>Bio / Sobre</label>
+                        <textarea rows="4" placeholder="Conte um pouco sobre você ou sua empresa..."></textarea>
+                    </div>
+
+                    <div class="register-footer register-footer-split">
+                        <button class="register-back-btn" data-back>
+                            <i class='bx bx-left-arrow-alt'></i>
+                            Voltar
+                        </button>
+                        <button class="register-button" data-submit>
+                            <i class='bx bx-check'></i>
+                            Criar conta
+                        </button>
+                    </div>
                 </div>
             </div>
             <p class="register-login">
                 Já tem uma conta?
-                <a href="#">Faça login</a>
+                <a href="login.html">Faça login</a>
             </p>
         </div>
     </main>
@@ -102,7 +239,7 @@
                 <div class="footer-brand">
                     <a href="#" class="footer-logo">
                         <div class="footer-logo-icon">
-                            <i class="fa-solid fa-layer-group"></i>
+                            <i class='bx bxs-layer'></i>
                         </div>
                         <span>UniLink</span>
                     </a>
@@ -126,10 +263,9 @@
                 </div>
                 <div class="footer-links">
                     <h4>Para usuários</h4>
-                    <a href="#">Cadastrar-se</a>
+                    <a href="register.html">Cadastrar-se</a>
                     <a href="login.html">Login</a>
-                    <a href="#">Central de Ajuda</a>
-                    <a href="#">Perguntas Frequentes</a>
+                    <a href="faq.html">Perguntas Frequentes</a>
                 </div>
                 <div class="footer-links">
                     <h4>Para empresas</h4>
@@ -152,6 +288,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/register.js"></script>
+    <script src="js/auth/register.js"></script>
 </body>
 </html>
