@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escolha seu Painel | UniLink</title>
+    <title>Sobre - UniLink</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/dashboard/dashboard.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/sobre.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header id="header">
         <nav class="navbar">
             <a href="index.html" class="logo">
                 <div class="logo-icon">
-                    <img src="img/marca/logo.png" alt="Logo">
+                    <i class='bx bxs-layer'></i>
                 </div>
-                <span >Uni<span style="color:#2563EB">Link</span></span>
+                <span>Uni<span style="color:#2563EB">Link</span></span>
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -52,69 +52,52 @@
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="dash-select">
-            <div class="dash-container">
-                <span class="dash-eyebrow">Escolha seu painel</span>
-                <h1>Qual dashboard você quer abrir?</h1>
-                <p>Cada perfil tem uma experiência dedicada com métricas, agenda e ferramentas específicas.</p>
-                <div class="dash-grid">
-                    <article class="dash-card dash-card-aluno">
-                        <div class="dash-card-top">
-                            <div class="dash-icon">
-                                <i class='bx bx-user'></i>
-                            </div>
-                            <h3>Sou Aluno</h3>
-                        </div>
-                        <div class="dash-card-body">
-                            <p>Acompanhe aulas contratadas, tarefas, favoritos e mensagens com professores.</p>
-                            <a href="painel-aluno.html" class="dash-btn">
-                                Abrir painel
-                                <i class='bx bx-right-arrow-alt'></i>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="dash-card dash-card-professor">
-                        <div class="dash-card-top">
-                            <div class="dash-icon">
-                                <i class='bx bxs-graduation'></i>
-                            </div>
-                            <h3>Sou Professor</h3>
-                        </div>
-                        <div class="dash-card-body">
-                            <p>Gerencie sua agenda, ganhos, alunos e propostas de empresas.</p>
-                            <a href="painel-professor.html" class="dash-btn">
-                                Abrir painel
-                                <i class='bx bx-right-arrow-alt'></i>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="dash-card dash-card-empresa">
-                        <div class="dash-card-top">
-                            <div class="dash-icon">
-                                <i class='bx bx-briefcase'></i>
-                            </div>
-                            <h3>Sou Empresa</h3>
-                        </div>
-                        <div class="dash-card-body">
-                            <p>Publique vagas e projetos, veja candidatos e contrate universitários.</p>
-                            <a href="painel-empresa.html" class="dash-btn">
-                                Abrir painel
-                                <i class='bx bx-right-arrow-alt'></i>
-                            </a>
-                        </div>
-                    </article>
+        <section class="mission-hero">
+            <div class="mission-hero-container">
+                <h1>Nossa missão</h1>
+                <p>
+                    Conectar universitários a alunos e empresas, gerando renda, experiência
+                    profissional e acesso à educação de qualidade para todos.
+                </p>
+            </div>
+        </section>
+
+        <section class="mission-values">
+            <div class="mission-values-grid">
+                <div class="mission-card">
+                    <div class="mission-card-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h3>Acessível</h3>
+                    <p>Aulas com preços justos, pensadas para o bolso do aluno e a renda do universitário.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-card-icon">
+                        <i class='bx bx-target-lock'></i>
+                    </div>
+                    <h3>Focado em impacto</h3>
+                    <p>Mais conhecimento compartilhado, mais oportunidades para quem está construindo sua carreira.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-card-icon">
+                        <i class='bx bxs-group'></i>
+                    </div>
+                    <h3>Comunidade</h3>
+                    <p>Universitários, alunos e empresas crescendo juntos em um mesmo lugar.</p>
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <a href="#" class="footer-logo">
+                    <a href="index.html" class="footer-logo">
                         <div class="footer-logo-icon">
-                            <img src="img/marca/logo.png" alt="Logo">
+                            <i class="fa-solid fa-layer-group"></i>
                         </div>
                         <span>UniLink</span>
                     </a>
@@ -163,6 +146,5 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/dashboard/dashboard.js"></script>
 </body>
 </html>

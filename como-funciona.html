@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escolha seu Painel | UniLink</title>
+    <title>Como Funciona - UniLink</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/dashboard/dashboard.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/como-funciona.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header id="header">
         <nav class="navbar">
             <a href="index.html" class="logo">
                 <div class="logo-icon">
-                    <img src="img/marca/logo.png" alt="Logo">
+                    <i class='bx bxs-layer'></i>
                 </div>
-                <span >Uni<span style="color:#2563EB">Link</span></span>
+                <span>Uni<span style="color:#2563EB">Link</span></span>
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -52,69 +52,90 @@
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="dash-select">
-            <div class="dash-container">
-                <span class="dash-eyebrow">Escolha seu painel</span>
-                <h1>Qual dashboard você quer abrir?</h1>
-                <p>Cada perfil tem uma experiência dedicada com métricas, agenda e ferramentas específicas.</p>
-                <div class="dash-grid">
-                    <article class="dash-card dash-card-aluno">
-                        <div class="dash-card-top">
-                            <div class="dash-icon">
-                                <i class='bx bx-user'></i>
-                            </div>
-                            <h3>Sou Aluno</h3>
-                        </div>
-                        <div class="dash-card-body">
-                            <p>Acompanhe aulas contratadas, tarefas, favoritos e mensagens com professores.</p>
-                            <a href="painel-aluno.html" class="dash-btn">
-                                Abrir painel
-                                <i class='bx bx-right-arrow-alt'></i>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="dash-card dash-card-professor">
-                        <div class="dash-card-top">
-                            <div class="dash-icon">
-                                <i class='bx bxs-graduation'></i>
-                            </div>
-                            <h3>Sou Professor</h3>
-                        </div>
-                        <div class="dash-card-body">
-                            <p>Gerencie sua agenda, ganhos, alunos e propostas de empresas.</p>
-                            <a href="painel-professor.html" class="dash-btn">
-                                Abrir painel
-                                <i class='bx bx-right-arrow-alt'></i>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="dash-card dash-card-empresa">
-                        <div class="dash-card-top">
-                            <div class="dash-icon">
-                                <i class='bx bx-briefcase'></i>
-                            </div>
-                            <h3>Sou Empresa</h3>
-                        </div>
-                        <div class="dash-card-body">
-                            <p>Publique vagas e projetos, veja candidatos e contrate universitários.</p>
-                            <a href="painel-empresa.html" class="dash-btn">
-                                Abrir painel
-                                <i class='bx bx-right-arrow-alt'></i>
-                            </a>
-                        </div>
-                    </article>
+        <section class="hiw-hero">
+            <div class="hiw-hero-container">
+                <h1>Como funciona o UniLink</h1>
+                <p>
+                    Uma plataforma feita para conectar quem ensina, quem aprende e quem contrata.
+                </p>
+            </div>
+        </section>
+
+        <section class="hiw-steps">
+            <div class="hiw-steps-grid">
+                <div class="hiw-card">
+                    <div class="hiw-card-icon">
+                        <i class='bx bx-user-plus'></i>
+                    </div>
+                    <div class="hiw-card-content">
+                        <span class="hiw-card-label">Passo 1</span>
+                        <h3>Cadastre-se</h3>
+                        <p>Crie sua conta como aluno, professor ou empresa em menos de 2 minutos.</p>
+                    </div>
+                </div>
+                <div class="hiw-card">
+                    <div class="hiw-card-icon">
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <div class="hiw-card-content">
+                        <span class="hiw-card-label">Passo 2</span>
+                        <h3>Explore</h3>
+                        <p>Encontre professores por matéria, universidade ou avaliação. Ou navegue por vagas.</p>
+                    </div>
+                </div>
+                <div class="hiw-card">
+                    <div class="hiw-card-icon">
+                        <i class='bx bx-message-rounded-dots'></i>
+                    </div>
+                    <div class="hiw-card-content">
+                        <span class="hiw-card-label">Passo 3</span>
+                        <h3>Converse</h3>
+                        <p>Combine os detalhes diretamente com o professor ou candidato pelo chat.</p>
+                    </div>
+                </div>
+                <div class="hiw-card">
+                    <div class="hiw-card-icon">
+                        <i class='bx bxs-calendar'></i>
+                    </div>
+                    <div class="hiw-card-content">
+                        <span class="hiw-card-label">Passo 4</span>
+                        <h3>Agende</h3>
+                        <p>Marque aulas online ou presenciais com agenda integrada.</p>
+                    </div>
+                </div>
+                <div class="hiw-card">
+                    <div class="hiw-card-icon">
+                        <i class='bx bxs-wallet'></i>
+                    </div>
+                    <div class="hiw-card-content">
+                        <span class="hiw-card-label">Passo 5</span>
+                        <h3>Pague com segurança</h3>
+                        <p>Pagamentos protegidos. O professor recebe após a aula confirmada.</p>
+                    </div>
+                </div>
+                <div class="hiw-card">
+                    <div class="hiw-card-icon">
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <div class="hiw-card-content">
+                        <span class="hiw-card-label">Passo 6</span>
+                        <h3>Avalie</h3>
+                        <p>Compartilhe sua experiência e ajude a comunidade a crescer.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <a href="#" class="footer-logo">
+                    <a href="index.html" class="footer-logo">
                         <div class="footer-logo-icon">
-                            <img src="img/marca/logo.png" alt="Logo">
+                            <i class="fa-solid fa-layer-group"></i>
                         </div>
                         <span>UniLink</span>
                     </a>
@@ -163,6 +184,5 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/dashboard/dashboard.js"></script>
 </body>
 </html>
